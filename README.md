@@ -49,3 +49,24 @@ discovery 2007-16 → embargo → frozen validation 2017-26, plus a Westfall-You
 Headline v3b = EPS revision 6M + FCI easing 6M (equal weight; valuation and technical pillars get zero weight by rule): IC ≈ +0.16 and L/S Sharpe ≈ 0.5 (USD) in both windows, permutation p ≈ 0.06.
 **Not proven:** v3b/v3c choose signals using pooled data, so the validation window is not clean OOS; p-values are not adjusted for choosing among 40 signals; only 5 markets.
 Current call (Apr 2026): Overweight US; Neutral Japan, Eurozone; Underweight Switzerland, UK (low conviction on UK).
+
+---
+## v4 — hypothesis-driven research (recommended submission)
+v4 restarts from economic mechanisms rather than indicator combinations: a data audit, five hypotheses with ex-ante directions, **nested incremental tests** (paired ΔIC + Fama-MacBeth), a frozen validation window, and a **25,301-candidate sweep used purely to calibrate the noise floor**.
+
+| Deliverable | File |
+|---|---|
+| v4 notebook (executed) | `notebook/Markets_Scorecard_v4.ipynb` |
+| v4 CSV input | `data/scorecard_input_monthly_v4.csv` |
+| v4 CSV outputs / charts | `output/v4/` (incl. `experiment_log.csv`, `sweep_survivors_validation.csv`) |
+| v4 PowerPoint (5 slides) | `slides/Markets_Scorecard_v4.pptx` |
+
+**Headline finding.** The best of 25,301 candidates cleared a Westfall-Young family-wise correction (adjusted **p = 0.002**) — and its validation IC is **−0.091**. All 10 discovery stars tested out of sample are negative (mean −0.060). *Surviving a multiple-testing correction on one sample is not evidence of an edge.*
+
+**What survives.** Only signals with the **same sign in both regimes**: EPS revision 6M (+0.117 → +0.131) and FCI 6M easing (+0.079 → +0.127). Valuation was the strongest family in 2007–16 and reversed after 2016, which also kills the GARP hypothesis in all three forms (additive, conjunction, conditional filter).
+
+**Recommended scorecard** — all four pillars constructed and tested, then weighted by evidence: Macro 50% (FCI 6M easing) + Micro 50% (EPS revision 6M); Valuation and Technical 0%. Validation IC +0.156 (t 2.38), L/S Sharpe 0.51 USD / 0.53 local, max DD −11.9%, active IR 0.47, permutation p 0.064.
+
+**Current view (Apr 2026):** Overweight US · Neutral Japan, Eurozone · Underweight Switzerland, UK.
+
+**Open data issues:** the supplied "price" file contains P/E, not prices (implied price used); the US EPS field (`Monthly_EPS`) is not the same kind of series as the other four (`BEst EPS`) and the US sits in the Overweight. Neither can be resolved without Bloomberg field verification.

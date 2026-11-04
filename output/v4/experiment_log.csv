@@ -1,0 +1,11 @@
+id,pillar,hypothesis,decision
+D01,Audit,"Supplied price file contains P/E, not prices",CONFIRMED - use implied price proxy
+D02,Audit,US EPS field differs in kind from the other four,"CONFIRMED - flagged, kept (user decision)"
+D03,Audit,Price proxy mechanically contaminates valuation / EPS signals,REJECTED - IC survives 1M and 3M lags
+SW01,Sweep,"25301 combinations, family-wise max-statistic control",6 cleared the luck ceiling; 0/10 held up on validation
+M_D,Macro,discovery-rule pillar winner: M_D  FCI alone,selected by rule
+MI_C,Micro,discovery-rule pillar winner: MI_C  growth + revision,selected by rule
+V_C,Valuation,discovery-rule pillar winner: V_C  relative P/E,selected by rule
+T_B,Technical,discovery-rule pillar winner: T_B  momentum 12-1M,selected by rule
+F_A,Factor,discovery-rule pillar winner: F_A  local-currency oil cost,outside required pillars
+FINAL,Scorecard,Weight pillars by sign-stability rather than discovery IC,"RECOMMENDED: Macro 50% + Micro 50%, Valuation/Technical 0%"
