@@ -1,0 +1,3 @@
+id,question,verdict,evidence
+T0,Does any model beat the best-of-4 noise ceiling?,see table,observed best +0.168 vs 95% ceiling +0.140
+T1,Does the OOS IC convert into P&L?,NO,"IC +0.168 but score-weighted L/S Sharpe -0.03, equal-weighted +0.51"

@@ -101,3 +101,37 @@ Mechanism-first, not combination-first. Four pre-registered experiments against 
 **Conclusion:** valuation forecasts the component it should forecast, and the earnings leg more than offsets it. Cheap markets re-rate upward *and* have their estimates cut. Valuation stays at **zero weight**, now for an understood reason.
 
 **Phase 1 produces a sharper question:** not "does valuation work" but **can the earnings leg be neutralised?** — cheapness conjoined with earnings *stability* (distinct from the GARP conjunction already rejected, which used earnings *momentum*). To be pre-registered before running.
+
+---
+## v6 — Predictive research laboratory (ML)
+Replaces the manual hypothesis loop with a research engine: one feature matrix (16 features + 5 pre-defined economic interactions), expanding-window walk-forward with a **6-month purge**, a four-model tournament, and systematic feature attribution. Cross-sectional z-scoring makes this a pure *relative* model — globally common variables (VIX, Brent, DXY) become exactly zero and cannot enter as raw features.
+
+| Deliverable | File |
+|---|---|
+| v6 notebook (executed) | `notebook/Markets_Scorecard_v6.ipynb` |
+| v6 CSVs / charts | `output/v6/` (incl. `feature_attribution.csv`, `null_ceiling.csv`, `drop_one_group.csv`) |
+
+### The guard that makes it meaningful
+The **entire pipeline** — all four models, all walk-forward folds — is re-run on block-shuffled country labels. A 4-model tournament on pure noise still reaches OOS IC **+0.140** at the 95th percentile. Anything below that is model-selection noise.
+
+| | |
+|---|---|
+| Best model OOS IC | **+0.168** (GAM, additive splines) |
+| One-feature benchmark (EPS revision 6M) | +0.137 |
+| p(best-of-4 noise ≥ observed) | **0.017** |
+| Non-overlapping 6M IC | **+0.306** (t 3.27, n=17) |
+| Sub-period stability | +0.187 / +0.149 |
+
+**First result in the project to clear a full-pipeline null ceiling *and* survive the non-overlapping test.**
+
+### The IC → P&L gap and its cause
+Score-weighted L/S Sharpe **−0.03**; equal-weighted top-2 minus bottom-2 Sharpe **+0.51**. Mean next-month return by predicted rank (bps): #1 +86, #2 +71, #3 +68, #4 +74, #5 +45 — the model separates the extremes and jumbles the middle, so score weighting bets hardest on the magnitudes it gets wrong. **The construction was the problem, not the signal.**
+
+### Attribution
+Credited by all four views: `ix_cheap_x_epsstab`, `micro_eps_stab`, `micro_eps_rev_6m`, `ix_fci_x_epsrev`, `macro_fci_6m`, `ix_mom_x_epsrev`, `tech_mom_6_1`, `micro_eps_rev_3m`. The **cheap × earnings-stability** interaction that v5 Phase 1 predicted is credited by the engine without being privileged.
+Permutation importance alone is unreliable here — `macro_pmi_3m` scores highest on it with a *negative* univariate IC, a textbook correlated-substitute artefact. Drop-one-group is the decisive test: removing interactions hurts every linear model; **removing valuation improves every model**.
+
+### Analytical finding
+`ext_oil_local_6m` correlates **+1.00** with `ext_fx_mom_6m` — oil is common to all five markets, so oil-in-local-currency *is* FX after cross-sectional demeaning. The v4 local-currency-oil experiment could never have added information.
+
+**Status: strongest candidate the project has produced, still not established alpha.** Test period is the same window examined in v3–v5, so it is not a clean hold-out. Next step is prospective paper trading of a frozen equal-weighted top-2/bottom-2 implementation.
