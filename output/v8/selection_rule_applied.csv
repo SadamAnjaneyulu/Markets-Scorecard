@@ -1,0 +1,13 @@
+pillar,candidate,1 both windows +,2 >=4/6 offsets,3 predicts multiple leg,QUALIFIES,mean IC
+Valuation,V1 equity-credit premium gap,False,True,True,False,0.04126213592233009
+Valuation,V2 earnings-residualised cheapness,False,True,True,False,0.010069535554972454
+Valuation,V3 multiple reversal (6M),True,True,True,True,0.07635078092021948
+Valuation,V4 ERP momentum (6M),False,True,True,False,0.05387821865766146
+Valuation,V5 growth-neutral relative value,False,False,True,False,-0.03453817895565467
+Valuation,V6 extremity-gated cheapness,False,False,True,False,0.011503704696431333
+Technical,T1 momentum 12-1M,True,True,n/a,True,0.07895631067961165
+Technical,T2 intermediate mom 12-7M,True,True,n/a,True,0.050315533980582514
+Technical,T3 earnings-confirmed mom,True,True,n/a,True,0.10507938336033695
+Technical,T4 trend consistency 12M,False,False,n/a,False,-0.05113067529749111
+Technical,T5 risk-adjusted mom 12-1M,True,True,n/a,True,0.09789239482200646
+Technical,T6 proximity to 12M high,True,True,n/a,True,0.03951460420617449

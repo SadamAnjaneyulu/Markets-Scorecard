@@ -1,0 +1,15 @@
+{
+  "pillars": {
+    "Macro": "MACRO fci easing 6M",
+    "Micro": "MICRO eps revision 6M",
+    "Valuation": "V3 multiple reversal (6M)",
+    "Technical": "T3 earnings-confirmed mom"
+  },
+  "selection_rule": [
+    "IC>0 in both windows",
+    ">=4/6 non-overlapping offsets",
+    "valuation must predict the multiple leg"
+  ],
+  "allocation": "equal-weight long top2 / short bottom2, 3M tranches",
+  "as_of": "2026-04"
+}

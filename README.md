@@ -158,3 +158,38 @@ No new features, no new hypotheses. Feature matrix loaded as written to disk so 
 **Corrections to the v6 write-up:** an additive-spline GAM cannot discover interactions; the five were pre-engineered, so the accurate claim is that the engine credited *pre-supplied* terms. Individual permutation importance (`macro_pmi_3m`) was a correlated-substitute artefact.
 
 **Status:** holds against a noise ceiling; a single feature does nearly all the work; the portfolio result depends on the US. Not investable alpha. Everything this dataset can tell us has been extracted — the only remaining test is prospective paper tracking.
+
+---
+## v8 — Completing the four pillars
+Macro and Micro were settled by v4–v7. v8 attacks the two open pillars with **six economically distinct candidates each**, directions fixed ex ante, under a selection rule declared before any candidate was run.
+
+**Why valuation kept failing (diagnosed, not guessed):** cheap markets re-rate upward (multiple leg +0.149/+0.097) *and* have estimates cut (earnings leg −0.215). The legs cancel. Raw P/E selects for cheap-for-a-reason. v5 also showed the obvious fix fails — multiplying cheapness by earnings stability **destroys** information (+0.130 → +0.009), because a product of z-scores is large when both components are low.
+
+**Selection rule (fixed in advance):** IC positive in *both* windows · ≥4 of 6 non-overlapping offsets positive · valuation must load positively on the **multiple leg**. Winner = highest mean of discovery and validation IC, never the max of either.
+
+| Pillar | Signal | disc IC | val IC | offsets | multiple leg | earnings leg |
+|---|---|---|---|---|---|---|
+| Macro | FCI 6M easing | +0.079 | +0.127 | 6/6 | −0.069 | +0.213 |
+| Micro | EPS revision 6M | +0.117 | +0.131 | 6/6 | −0.089 | +0.333 |
+| Valuation | V3 multiple reversal 6M | +0.093 | +0.059 | 4/6 | +0.112 | −0.048 |
+| Technical | T3 earnings-confirmed momentum | +0.097 | +0.113 | 6/6 | −0.053 | +0.246 |
+
+### Scorecard
+| | disc IC | val IC | disc Sharpe | val Sharpe |
+|---|---|---|---|---|
+| **4-pillar equal weight** | **+0.234** (t 3.14) | **+0.163** (t 2.11) | **0.80** | **0.63** |
+| 3-pillar (no Valuation) | +0.182 | +0.128 | 0.67 | 0.60 |
+| 2-pillar core (Macro+Micro) | +0.160 | +0.156 | 0.66 | 0.57 |
+
+Max drawdown −11.3% in validation. **Strongest result in the project**, and the composite IC exceeds every individual signal — genuine diversification. **End-to-end null** (full selection rule re-run on shuffled labels): composite p = **0.000**.
+
+### Where it is weak — on the record
+1. **Individual pillar winners do not clear the 12-candidate multiplicity ceiling** (best observed +0.098 vs best-of-12 noise 95th pct +0.120; Valuation p 0.321, Technical p 0.144).
+2. **V3's qualifying condition is mechanical.** `P/E_t` sits in both the signal and the target denominator; lag 3 months and the multiple-leg loading falls +0.112 → **+0.001**, validation IC turns **−0.102**. After six distinct constructions, **valuation still has no signal that survives scrutiny at 3–6 months**. V3 is carried as the pillar's best available representative, not as a discovery.
+3. Valuation's true worth is 4-pillar vs 3-pillar: val IC +0.163 vs +0.128, Sharpe 0.63 vs 0.60.
+4. **Country concentration persists** — without the US, validation Sharpe is −0.08.
+5. 2017-26 examined since v3: structured re-use with declared rule and multiplicity corrections, **not a clean hold-out**. Price return only; five markets; 78% first principal component.
+
+**Methodological lesson carried from v5: gate, don't multiply.** T3 gates momentum on positive EPS growth (+0.026 mean IC over plain momentum); the product operator that destroyed cheap×stability is avoided.
+
+**Current ranking (Apr 2026):** US Overweight · Japan Overweight · UK / Eurozone / Switzerland Underweight.
