@@ -69,4 +69,14 @@ v4 restarts from economic mechanisms rather than indicator combinations: a data 
 
 **Current view (Apr 2026):** Overweight US · Neutral Japan, Eurozone · Underweight Switzerland, UK.
 
-**Open data issues:** the supplied "price" file contains P/E, not prices (implied price used); the US EPS field (`Monthly_EPS`) is not the same kind of series as the other four (`BEst EPS`) and the US sits in the Overweight. Neither can be resolved without Bloomberg field verification.
+**Data audit (§1 and §12b of the notebook).** The supplied "price" file contains P/E, not prices — but **price is exactly recoverable**: `Forward P/E × Forward EPS = Price` is an accounting identity, and the recovered US series matches **actual S&P 500 monthly returns to 0.04 pp** (vol 13–17%, 2008-09 drawdown −44% to −58%, cross-market correlations 0.61–0.84). So the return target is the true index, not a proxy, and the "contaminated target" challenge does not stand. It also resolves the US EPS question: since P/E × EPS reproduces SPX exactly, `Monthly_EPS` must be the same forward consensus as `BEst EPS` — a naming difference.
+
+**What an external review upheld (§12b).**
+- **Concentration:** the US supplies +157% of the long/short P&L. Excluding it cuts validation IC from +0.156 to +0.050 and Sharpe from 0.51 to 0.14.
+- **Redundancy:** adding FCI to EPS revisions is not significant (ΔIC t = 0.46); macro alone gives IC +0.127 / Sharpe 0.49.
+- **Inference:** with non-overlapping 6M returns the validation t-stat falls from 1.46 to 0.94.
+- **Selection:** the sign-stability rule was chosen after seeing validation, so +0.156 is optimistic.
+- **Dividends:** price return only; UK and Switzerland are high-yield and both are Underweight, so the bias runs with the call.
+- **Mechanism:** the composite predicts the *earnings* leg (+0.32 validation) and loses on the *multiple* leg (−0.06). Valuation is the mirror image — it predicts re-rating in both windows (+0.149/+0.097) but loses on earnings, which is why its total-return IC appeared to "reverse".
+
+**Status: research candidate for paper trading, not an investable alpha.**
