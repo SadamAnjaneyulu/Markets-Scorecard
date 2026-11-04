@@ -1,0 +1,7 @@
+Check,Result,Verdict
+1. Non-overlapping robustness (6 offsets),"mean +0.184, range +0.118 to +0.306; 6/6 positive, 2/6 with bootstrap p<=0.05",ROBUST
+"2. Null ceiling at 2,000 replications",observed +0.168 vs 95% ceiling +0.124; p = 0.0095 (19 exceedances of 2000),PASSES
+3. GAM vs one-feature benchmark (paired),"difference +0.030, NW t +0.55, bootstrap p 0.265",NOT JUSTIFIED
+4. Valuation reconciliation,interaction alone +0.009 vs EPS-stability alone +0.130; removing all valuation-related +0.157 vs full +0.168,see table
+5. Country concentration,equal-weighted Sharpe +0.51; long leg +66 bps vs short leg -34 bps,see table
+6. Duplicate feature removal,GAM changes by -0.0095 when ext_oil_local_6m is dropped (r = +0.999),CONFIRMED redundant

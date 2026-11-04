@@ -1,0 +1,43 @@
+{
+  "features": [
+    "macro_fci_3m",
+    "macro_fci_6m",
+    "macro_credit_6m",
+    "macro_pmi_level",
+    "macro_pmi_3m",
+    "macro_2y_fall_6m",
+    "micro_eps_rev_3m",
+    "micro_eps_rev_6m",
+    "micro_eps_stab",
+    "val_pe_own",
+    "val_pe_peers",
+    "val_erp",
+    "tech_mom_6_1",
+    "tech_mom_12_1",
+    "ext_fx_mom_6m",
+    "ext_oil_local_6m",
+    "ix_cheap_x_epsstab",
+    "ix_cheap_x_fci",
+    "ix_2y_x_credit",
+    "ix_fci_x_epsrev",
+    "ix_mom_x_epsrev"
+  ],
+  "n_features": 21,
+  "models": {
+    "Ridge": "Ridge(alpha=50)",
+    "ElasticNet": "ElasticNet(alpha=0.001, l1_ratio=0.5)",
+    "GAM": "SplineTransformer(n_knots=4, degree=3) -> Ridge(alpha=200)",
+    "GBM": "HistGradientBoosting(max_depth=2, max_iter=120, lr=0.05, min_samples_leaf=40, l2=1.0)"
+  },
+  "validation": {
+    "scheme": "expanding-window walk-forward",
+    "min_train_months": 72,
+    "purge_months": 6,
+    "refit_every_months": 12
+  },
+  "target": "relative USD total return (cross-sectionally demeaned), horizon 3M primary / 6M secondary",
+  "standardisation": "features cross-sectionally z-scored monthly; then train-set mean/sd standardisation inside each fold",
+  "allocation_rule_candidate": "equal-weighted long top-2, short bottom-2, 3-month tranches, gross of costs",
+  "allocation_rule_rejected": "continuous score weighting (v6 Sharpe -0.03)",
+  "null": "block-shuffled country labels (block=3M), same permutation across all features, full 4-model tournament re-run"
+}

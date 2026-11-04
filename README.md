@@ -135,3 +135,26 @@ Permutation importance alone is unreliable here — `macro_pmi_3m` scores highes
 `ext_oil_local_6m` correlates **+1.00** with `ext_fx_mom_6m` — oil is common to all five markets, so oil-in-local-currency *is* FX after cross-sectional demeaning. The v4 local-currency-oil experiment could never have added information.
 
 **Status: strongest candidate the project has produced, still not established alpha.** Test period is the same window examined in v3–v5, so it is not a clean hold-out. Next step is prospective paper trading of a frozen equal-weighted top-2/bottom-2 implementation.
+
+---
+## v7 — Verification pass on the frozen v6 model
+No new features, no new hypotheses. Feature matrix loaded as written to disk so the run is bit-identical to v6. Spec frozen in `output/v7/frozen_model_spec.json`.
+
+| Check | Result | Verdict |
+|---|---|---|
+| All six non-overlapping offsets | +0.306, +0.118, +0.212, +0.118, +0.176, +0.176 → **mean +0.184**, 6/6 positive, 2/6 significant | v6's +0.306 was the best draw; **withdrawn** |
+| Null ceiling, 2,000 reps (was 120) | observed +0.168 vs 95% ceiling +0.124, **p = 0.0095** on 19 exceedances | **Holds** |
+| GAM vs one-feature benchmark (paired) | difference +0.030, NW t +0.55, bootstrap p 0.265 | **Complexity not justified** |
+| Valuation reconciliation | interaction alone +0.009 vs its EPS-stability component alone **+0.130** | **Phase-1 hypothesis rejected** |
+| Grouped conditional permutation | micro +0.062, ix +0.053, macro +0.030, **val −0.016** | replaces the v6 `macro_pmi_3m` artefact |
+| Five-country P&L (reconciles exactly) | long leg +66.2 bps, **short leg −33.6 bps**; UK short 82% of months, −18.7 bps | short side loses money |
+| Leave-one-country-out | **ex-US: IC +0.027, Sharpe +0.10**; ex-Japan and ex-Eurozone *improve* | **substantially a US call** |
+| Duplicate feature | r = +0.9993, removal moves GAM −0.0095 | confirmed redundant |
+
+**Key reversal:** v5's "cheapness conditional on earnings stability" is **rejected** — multiplying earnings stability by cheapness destroys information (+0.130 → +0.009). The carrier is earnings stability alone. Scrambling the valuation block *raises* out-of-sample IC.
+
+**Discipline note:** "full model minus valuation main effects" scores +0.193, the best configuration seen, and is **deliberately not adopted** — it was identified on the same data used to evaluate it.
+
+**Corrections to the v6 write-up:** an additive-spline GAM cannot discover interactions; the five were pre-engineered, so the accurate claim is that the engine credited *pre-supplied* terms. Individual permutation importance (`macro_pmi_3m`) was a correlated-substitute artefact.
+
+**Status:** holds against a noise ceiling; a single feature does nearly all the work; the portfolio result depends on the US. Not investable alpha. Everything this dataset can tell us has been extracted — the only remaining test is prospective paper tracking.
