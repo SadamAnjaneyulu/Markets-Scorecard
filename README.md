@@ -32,3 +32,20 @@ All four combinations are run and reported (research ledger in the notebook). **
 | v2 PowerPoint (5 slides) | `slides/Markets_Scorecard_v2.pptx` |
 
 **Result:** headline v2 (FCI + walk-forward weights) improves on v1 (composite IC +0.013 → +0.069; L/S USD Sharpe 0.05 → 0.18) but the Sharpe is not distinguishable from luck (permutation p = 0.24). The macro swap drove the gain; walk-forward weighting did not help. Stable across all specs: Eurozone and Switzerland are bottom-two; Japan top-two in 3 of 4.
+
+---
+## v3 — disciplined signal search (latest)
+v1/v2 produced no statistically reliable signal, so v3 searches **all supplied data** (40 hypothesis-driven signals: EPS, valuation, 2Y yields, credit, FX, technical, macro; directions fixed ex ante) with selection-bias controls:
+discovery 2007-16 → embargo → frozen validation 2017-26, plus a Westfall-Young max-statistic permutation test (noise floor for the best of 40) and a pooled Stage 2.
+
+| Deliverable | File |
+|---|---|
+| v3 notebook (executed) | `notebook/Markets_Scorecard_v3.ipynb` |
+| v3 CSVs / charts | `output/v3/` |
+| v3 PowerPoint (5 slides) | `slides/Markets_Scorecard_v3.pptx` |
+
+**Findings:** nothing clears the multiple-testing bar in discovery (best z 2.64 vs 2.95); valuation signals reversed sign after 2016; across the library discovery IC does not predict validation IC (ρ = −0.13).
+**EPS revision 6M** is the only signal positive in both windows with pooled adjusted p = 0.09 (validation p = 0.02, Bonferroni 0.11). **FCI easing 6M** is the runner-up (adj. p = 0.27).
+Headline v3b = EPS revision 6M + FCI easing 6M (equal weight; valuation and technical pillars get zero weight by rule): IC ≈ +0.16 and L/S Sharpe ≈ 0.5 (USD) in both windows, permutation p ≈ 0.06.
+**Not proven:** v3b/v3c choose signals using pooled data, so the validation window is not clean OOS; p-values are not adjusted for choosing among 40 signals; only 5 markets.
+Current call (Apr 2026): Overweight US; Neutral Japan, Eurozone; Underweight Switzerland, UK (low conviction on UK).
