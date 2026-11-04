@@ -1,0 +1,7 @@
+id,hypothesis,decision,note
+G0,Valuation->re-rating is a measurement artefact,"NOT SUPPORTED (survives, weakly)",Placebo IC ~0; validation IC holds under 1-6M lags; discovery IC decays. High P/E autocorrelation limits the lag test.
+R01,Expanding multiples keep expanding,REJECTED,Negative IC at lag 0 in both windows; sign unstable once lagged
+R02,Markets cheap vs own history re-rate upward,"SUPPORTED, weak","Positive in both windows at 3M and 6M; t ~1.3-1.6, never significant"
+R02b,Cheap vs peers predicts re-rating at 6M,"SUPPORTED, strongest clean statistic in the project","val multiple-leg IC +0.166, t +2.26, block-bootstrap p 0.042"
+R03,Cheapness only re-rates when financing conditions ease,REJECTED,Conditioning reduces IC to ~0; the regime relationship reverses between discovery and validation
+T1,The repricing lead is investable,REJECTED,Multiple leg positive but total return negative (val -0.126); incremental delta-IC -0.183 (t -3.28); walk-forward Sharpe -0.30

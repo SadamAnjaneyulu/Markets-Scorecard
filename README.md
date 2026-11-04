@@ -80,3 +80,24 @@ v4 restarts from economic mechanisms rather than indicator combinations: a data 
 - **Mechanism:** the composite predicts the *earnings* leg (+0.32 validation) and loses on the *multiple* leg (−0.06). Valuation is the mirror image — it predicts re-rating in both windows (+0.149/+0.097) but loses on earnings, which is why its total-return IC appeared to "reverse".
 
 **Status: research candidate for paper trading, not an investable alpha.**
+
+---
+## v5 — Phase 1: repricing research
+Mechanism-first, not combination-first. Four pre-registered experiments against the **multiple leg** of the return identity (66% of local-return variance, never modelled directly before).
+
+| Deliverable | File |
+|---|---|
+| v5 notebook (executed) | `notebook/Markets_Scorecard_v5.ipynb` |
+| v5 CSVs | `output/v5/` (incl. `experiment_log_v5.csv`, `v5_signals_and_legs_monthly.csv`) |
+
+| ID | Hypothesis | Verdict |
+|---|---|---|
+| G0 | The re-rating link is a measurement artefact | **Survives** — random-walk placebo IC ≈ 0; real data at 94th/87th percentile |
+| R01 | Expanding multiples keep expanding | **Rejected** — IC −0.104 / −0.105 |
+| R02 | Cheap markets re-rate upward | **Supported on the component** — multiple-leg IC +0.149 / +0.097; cheap-vs-peers at 6M reaches val IC **+0.166, t 2.26, bootstrap p 0.042** (strongest clean statistic in the project) |
+| R03 | Cheapness only re-rates when financing eases | **Rejected** — conditioning collapses IC to +0.028, and the regime relationship *reverses* between windows (easing in discovery, tightening in validation) |
+| T1 | The lead is investable | **No** — total-USD IC −0.126; adding to the v4 composite gives ΔIC −0.183 (t −3.28); walk-forward Sharpe −0.30 |
+
+**Conclusion:** valuation forecasts the component it should forecast, and the earnings leg more than offsets it. Cheap markets re-rate upward *and* have their estimates cut. Valuation stays at **zero weight**, now for an understood reason.
+
+**Phase 1 produces a sharper question:** not "does valuation work" but **can the earnings leg be neutralised?** — cheapness conjoined with earnings *stability* (distinct from the GARP conjunction already rejected, which used earnings *momentum*). To be pre-registered before running.
