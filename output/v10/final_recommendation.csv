@@ -1,0 +1,7 @@
+Pillar,Indicator,Status,Evidence,Against
+Macro,FCI 6M easing,PROVISIONAL - strongest candidate,"val IC +0.175 (HAC t 2.49), full-sample boot p 0.015, ex-US +0.090 (survives), adds +0.058 to Micro (t 1.08, not significant)",discovery IC only +0.048; p vs best-of-44 null = 0.113; sample-dependent
+Micro,EPS revision 6M,PROVISIONAL,"val IC +0.102 (t 1.21), full boot p 0.041, stable across LOO (ex-US +0.076), works in low-dispersion regimes",does not add to Macro in validation (-0.015); p vs best-of-44 = 0.738; US field definition unverified
+Valuation,P/E vs peers (best on discovery),REJECTED,none out of sample,"val IC -0.064; incremental -0.091 (t -2.35, CI excludes 0 on the NEGATIVE side); 12 constructions tested, none survives"
+Valuation,ERP vs credit (E/P-2Y-OAS),UNDER INVESTIGATION,only valuation construction with positive validation total IC (+0.052) and the largest discovery multiple-leg loading (+0.284),not selected by the discovery rule; too weak to claim; would need a fresh window
+Technical,PATH low realised vol (best on discovery),REJECTED,none out of sample,val IC -0.084 (t -1.22); incremental -0.069
+Technical,PATH trend quality R2 12M,UNDER INVESTIGATION,"val IC +0.171, earnings-free val IC +0.119 (t 1.88), only 2.3% R2 on the earnings block - genuinely independent price information","discovery IC -0.011, so it was NOT selected; claiming it now would reuse the validation window for selection. Must be tested on fresh data."

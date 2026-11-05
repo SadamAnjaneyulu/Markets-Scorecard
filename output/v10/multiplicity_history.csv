@@ -1,0 +1,11 @@
+phase,what was searched,candidates,cumulative
+v1,1 pre-specified 4-pillar spec,1,1
+v2,4 specifications (FCI swap x weighting),4,5
+v3,40 single signals + 3 composites,43,48
+v4,exhaustive 1/2/3-signal + 4-pillar combinations,25301,25349
+v5,4 repricing experiments,4,25353
+v6,21 features x 4 model families,84,25437
+v7,verification only (no new selection),0,25437
+v8,12 pillar candidates,12,25449
+v9,5 signals revalidated,5,25454
+v10,44 signals across 4 pillars,44,25498

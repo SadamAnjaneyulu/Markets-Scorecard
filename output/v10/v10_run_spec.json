@@ -1,0 +1,20 @@
+{
+  "head_at_start": "81057b2",
+  "common_sample": [
+    "2010-11",
+    "2026-04"
+  ],
+  "n_months": 159,
+  "discovery": [
+    "2010-11",
+    "2016-12"
+  ],
+  "validation": [
+    "2017-07",
+    "2026-04"
+  ],
+  "n_signals_v10": 44,
+  "cumulative_candidates_all_phases": 25498,
+  "inference": "HAC lags = horizon; moving-block bootstrap L = 2 x horizon; add-one MC p-values",
+  "selection_discipline": "Valuation and Technical selected on DISCOVERY ONLY, then tested once on validation"
+}

@@ -1,0 +1,13 @@
+# Unresolved data and methodology limitations (v10)
+Supersedes `output/v9/UNRESOLVED_ISSUES.md`; items 1–10 there still stand. New or revised at v10:
+
+| # | Limitation | Impact on the investment conclusion | Fixable here? |
+|---|---|---|---|
+| 11 | **The common sample is itself a free parameter.** Adding signals that need long warm-ups shortens the window on which everything is compared. Macro discovery IC is +0.048 on the 44-signal sample and +0.079 on the 2-signal sample; validation t is 2.49 vs 1.74. | Cross-version comparisons (v9 vs v10) are **not like-for-like**. Any single reported IC should be read with a sample-choice error bar at least as wide as this gap. | No — structural. Mitigated by reporting both. |
+| 12 | **The six-offset robustness criterion used in v8 and v9 was invalid.** The offsets partition one series; their mean equals the full-series mean exactly. | Every robustness claim in v8/v9 that cited "k of 6 offsets" is weaker than stated. Superseded by block bootstrap (L = 2h) and HAC (lags = h). | Fixed in v10. |
+| 13 | **Cumulative selection count is ~25,500 across v1–v10.** A Bonferroni threshold at that scale is p < 1e-5. | Unattainable with 5 markets and ~160 months. All p-values remain **conditional on the current phase's null**. | No — the history cannot be reconstructed into one null. |
+| 14 | **The multiple and earnings legs correlate −0.767.** | This is a structural limit, not a modelling failure: a signal predicting one leg positively tends to predict the other negatively. Valuation cannot be harvested through the multiple leg alone in this universe. | No — it is a property of the data. |
+| 15 | **Two candidates are contaminated by their own discovery route.** ERP-vs-credit and trend-quality R² look good in validation but were not selected on discovery. | They cannot be promoted without a fresh window; the dataset has none left. | No — needs forward data. |
+| 16 | **Validation window now used for selection or testing in v3–v10.** | Even the "discovery-only selection" discipline applied in v10 cannot undo prior exposure of the same months. | No — only paper trading fixes this. |
+| 17 | **Macro FCI is partly US-dependent.** Ex-US validation IC falls from +0.175 to +0.090. | The single surviving candidate weakens materially without the US, the market whose EPS field is also unverified. | Reported, not fixable. |
+| 18 | **FCI series are not homogeneous.** Goldman FCI for US/UK/CH/JP, Bloomberg BFCIEU for the Eurozone, and Switzerland uses the euro-area index. | The strongest signal is built on a definitionally mixed panel. | No — no alternative series supplied. |

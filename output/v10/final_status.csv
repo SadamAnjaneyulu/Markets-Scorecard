@@ -1,0 +1,5 @@
+pillar,indicator,val IC>0 & t>=1,full boot CI excl 0,adds to Macro+Micro,status
+Macro,fci chg 6M,True,False,,PROVISIONAL
+Micro,eps rev 6M,True,False,,PROVISIONAL
+Valuation,P/E vs peers (cheap+),False,False,False,REJECTED
+Technical,PATH low realised vol 12M,False,False,False,REJECTED
