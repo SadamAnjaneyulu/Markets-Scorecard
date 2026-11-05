@@ -1,0 +1,25 @@
+sample,window,horizon,from,to,IC months
+v9 sample (holed),discovery,3M,2009-12,2016-12,80
+v9 sample (holed),discovery,6M,2009-12,2016-12,80
+v9 sample (holed),validation,3M,2017-07,2026-01,92
+v9 sample (holed),validation,6M,2017-07,2025-10,89
+v9 sample (holed),full,3M,2009-12,2026-01,178
+v9 sample (holed),full,6M,2009-12,2025-10,175
+v10 sample (holed),discovery,3M,2010-11,2016-12,61
+v10 sample (holed),discovery,6M,2010-11,2016-12,61
+v10 sample (holed),validation,3M,2017-07,2026-01,89
+v10 sample (holed),validation,6M,2017-07,2025-10,86
+v10 sample (holed),full,3M,2010-11,2026-01,156
+v10 sample (holed),full,6M,2010-11,2025-10,153
+"CLEAN-10 (v10 start, no holes)",discovery,3M,2010-11,2016-12,74
+"CLEAN-10 (v10 start, no holes)",discovery,6M,2010-11,2016-12,74
+"CLEAN-10 (v10 start, no holes)",validation,3M,2017-07,2026-01,103
+"CLEAN-10 (v10 start, no holes)",validation,6M,2017-07,2025-10,100
+"CLEAN-10 (v10 start, no holes)",full,3M,2010-11,2026-01,183
+"CLEAN-10 (v10 start, no holes)",full,6M,2010-11,2025-10,180
+"CLEAN (2-signal, no holes)",discovery,3M,2009-05,2016-12,92
+"CLEAN (2-signal, no holes)",discovery,6M,2009-05,2016-12,92
+"CLEAN (2-signal, no holes)",validation,3M,2017-07,2026-01,103
+"CLEAN (2-signal, no holes)",validation,6M,2017-07,2025-10,100
+"CLEAN (2-signal, no holes)",full,3M,2009-05,2026-01,201
+"CLEAN (2-signal, no holes)",full,6M,2009-05,2025-10,198

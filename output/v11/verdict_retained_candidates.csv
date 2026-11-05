@@ -1,0 +1,5 @@
+signal,horizon,val IC,val t,empirical cv,timing t (val),1 validation IC > 0,2 validation HAC t > empirical 5% cv,3 own block-permutation p < 0.05 (val),4 best-of-19 family p < 0.05 (val),5 timing IC (drift removed) t > empirical cv (val),6 every leave-one-out validation IC > 0,7 full IC > 0 after dropping best 12 months,8 validation IC > 0 under ±4% p.a. carry stress,criteria passed,STATUS
+Macro FCI 6M,3M,0.12718446601941746,1.7361328345483507,2.0309655104506956,1.4982221358247148,True,False,True,False,False,True,True,True,5/8,PROVISIONAL
+Macro FCI 6M,6M,0.17299999999999996,1.9614889754803706,2.0319332706356183,1.9086351850121892,True,False,True,False,False,True,True,True,5/8,PROVISIONAL
+Micro EPS rev 6M,3M,0.13106796116504857,1.6981314137047783,1.803331101970546,0.9847096660277822,True,False,True,False,False,True,True,True,5/8,PROVISIONAL
+Micro EPS rev 6M,6M,0.07400000000000001,0.7830464939295262,1.9820377817315715,0.1268716605896623,True,False,False,False,False,True,True,True,4/8,WEAK / NOT SUPPORTED

@@ -1,0 +1,10 @@
+table,saved file,rows,max |reproduced - saved|
+v9 incremental ΔIC,output/v9/incremental_ic.csv,14,9.71445146547012e-17
+v9 discovery vs validation,output/v9/discovery_vs_validation.csv,15,2.220446049250313e-16
+v10 standalone sweep (44 signals),output/v10/standalone_sweep.csv,44,4.440892098500626e-16
+v10 sample sensitivity,output/v10/sample_sensitivity.csv,4,6.938893903907228e-17
+v10 technical contamination,output/v10/technical_contamination.csv,13,2.220446049250313e-16
+v10 discovery-selected validation test,output/v10/discovery_selected_validation_test.csv,2,9.020562075079397e-17
+v10 reopened incremental,output/v10/incremental_reopened.csv,4,4.440892098500626e-16
+v10 valuation legs,output/v10/valuation_leg_analysis.csv,6,8.326672684688674e-17
+"v10 §6 incremental ΔIC (vs stored HTML, 3dp)",notebook/Markets_Scorecard_v10.ipynb cell 17 output,4,0.0

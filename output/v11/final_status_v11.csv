@@ -1,0 +1,5 @@
+pillar,signal,v10 status,v11 status,reason
+Macro,FCI 6M easing (own-sd scaled),PROVISIONAL (strongest),PROVISIONAL/PROVISIONAL,"v10 validation t 2.49 depended on 27 censored stress months; clean t 1.74 (3M) / 1.96 (6M); survives drift removal better than EPS; 3M depends on the US (ex-US t 0.72), 6M does not (ex-US t 1.92); fails family-selection null"
+Micro,EPS revision 6M,PROVISIONAL,PROVISIONAL/WEAK / NOT SUPPORTED,Clean 3M validation IC +0.131 but most of it is a static US/Japan tilt: timing IC +0.072 (t 0.99) at 3M and +0.012 at 6M; UK is the largest single contributor; fails family-selection null
+Valuation,P/E vs peers / ERP vs credit,REJECTED / exploratory,REJECTED / EXPLORATORY,P/E vs peers negative in validation and harmful incrementally (ΔIC t −3.3 on clean months); ERP-vs-credit cannot be validated on data already seen
+Technical,PATH low vol / trend-quality R²,REJECTED / exploratory,REJECTED / EXPLORATORY,"Low vol flips sign; trend R² failed discovery, is unsigned, and its supporting evidence is the window used to notice it"

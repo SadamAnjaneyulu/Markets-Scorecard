@@ -193,3 +193,12 @@ Max drawdown −11.3% in validation. **Strongest result in the project**, and th
 **Methodological lesson carried from v5: gate, don't multiply.** T3 gates momentum on positive EPS growth (+0.026 mean IC over plain momentum); the product operator that destroyed cheap×stability is avoided.
 
 **Current ranking (Apr 2026):** US Overweight · Japan Overweight · UK / Eurozone / Switzerland Underweight.
+
+## v11 — Audit of v10 (`notebook/Markets_Scorecard_v11.ipynb`, outputs `output/v11/`)
+Report: `output/v11/AUDIT_REPORT.md`. Re-executes committed v9/v10 notebook code: nine tables reproduce exactly (max diff 4e-16).
+- **v9 and v10 "common samples" silently dropped 16 / 27 stress months.** Gated signals go constant and every signal lost those months. v10's FCI validation t 2.49 falls to 1.74 on the clean 204-month sample.
+- v9 +0.005 vs v10 +0.058 incremental IC: opposite directions on different samples. Neither direction is significant on any sample.
+- EPS revision IC is largely a static US/Japan tilt (validation timing-only IC +0.072, t 0.99). FCI survives drift removal better, especially at 6M.
+- HAC/bootstrap over-reject (6–9% size under a pure null). Best-of-family p ≈ 0.16–0.20. **No statistical significance can be claimed.**
+- Valuation and Technical stay rejected or exploratory, with documentation in `valuation_technical_closure.csv`.
+- Latest common data date is 2026-04-30 (US file), 7 months before the session date.

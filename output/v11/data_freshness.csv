@@ -1,0 +1,6 @@
+market,file,rows with date,first date,last date,obs per month (median),undated rows,months (excl. final) whose last obs is >4 days before month-end,months stale vs session date
+US,US_raw_data.xlsx,256,2005-01-31,2026-04-30,1,0,0,7
+Eurozone,EUR_raw_data.xlsx,360,1996-07-31,2026-06-29,1,0,0,5
+UK,UK_raw_data.xlsx,361,1996-07-31,2026-07-02,1,15,0,4
+Switzerland,CH_raw_data.xlsx,248,2005-12-30,2026-07-14,1,113,0,4
+Japan,JPY_raw_data.xlsx,253,2005-06-30,2026-06-29,1,0,0,5

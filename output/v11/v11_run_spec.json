@@ -1,0 +1,16 @@
+{
+  "head_at_start": "02645a4",
+  "session_date": "2026-11-05",
+  "latest_common_data_date": "2026-04-30",
+  "clean_sample": [
+    "2009-05",
+    "2026-04",
+    204
+  ],
+  "discovery_end": "2016-12",
+  "validation_start": "2017-07",
+  "v9_sample_holes": 16,
+  "v10_sample_holes": 27,
+  "inference": "HAC lags=h; MBB L=2h (vectorised, identical RNG stream); block-permutation of country labels in h-month blocks, 5000 draws; size simulation 1000 draws",
+  "no_selection_made": true
+}
