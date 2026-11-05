@@ -202,3 +202,18 @@ Report: `output/v11/AUDIT_REPORT.md`. Re-executes committed v9/v10 notebook code
 - HAC/bootstrap over-reject (6–9% size under a pure null). Best-of-family p ≈ 0.16–0.20. **No statistical significance can be claimed.**
 - Valuation and Technical stay rejected or exploratory, with documentation in `valuation_technical_closure.csv`.
 - Latest common data date is 2026-04-30 (US file), 7 months before the session date.
+
+## v12 — Final deliverables (`notebook/Markets_Scorecard_v12.ipynb`, outputs `output/v12/`)
+Doc: `output/v12/METHODOLOGY_AND_LIMITATIONS.md`. Locked choices:
+- Predictive score = FCI 6M only, 6M horizon.
+- Costs on a 0/5/10/20 bps grid.
+- Prior portfolio rules with 6M overlapping tranches.
+
+Results:
+- **4-pillar diagnostic scorecard** with a status per pillar. Its aggregate has a negative validation IC and is not used for allocation.
+- **Backtest, validation 2017-08..2026-04:**
+  - Long-short, net of 10 bps: +3.5% p.a., Sharpe 0.68, max DD −9.4%.
+  - Long-only active vs equal-weight: +1.65% p.a.
+  - Bootstrap CI spans zero.
+- **Ranking as of 2026-04-30** (latest common date): OW US, Switzerland · N Eurozone · UW Japan, UK. Low conviction. The held 6-tranche book differs from the latest signal.
+- CSV input: `input_monthly_panel.csv`. Outputs: `output_monthly_scores.csv`, `output_current_ranking.csv`, `output_backtest_monthly.csv`, `backtest_summary.csv`.

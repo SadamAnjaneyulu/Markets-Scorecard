@@ -1,0 +1,35 @@
+{
+  "as_of": "2026-04",
+  "predictive_signal": "Macro FCI 6M easing, own expanding sd, cross-sectional z",
+  "horizon_months": 6,
+  "portfolio": "L/S +50% top-2 / -50% bottom-2; long-only 50% top-2 vs 20% EW; 6M overlapping tranches",
+  "costs_bps_one_way": [
+    0,
+    5,
+    10,
+    20
+  ],
+  "diagnostic_pillars": {
+    "Macro": "FCI 6M easing",
+    "Micro": "EPS revision 6M",
+    "Valuation": "P/E vs peers (cheap +)",
+    "Technical": "Low realised vol 12M"
+  },
+  "status": {
+    "Macro": "PROVISIONAL \u2014 predictive",
+    "Micro": "PROVISIONAL \u2014 diagnostic only",
+    "Valuation": "REJECTED \u2014 context only",
+    "Technical": "REJECTED \u2014 context only"
+  },
+  "overweight": [
+    "US",
+    "Switzerland"
+  ],
+  "neutral": [
+    "Eurozone"
+  ],
+  "underweight": [
+    "Japan",
+    "UK"
+  ]
+}
