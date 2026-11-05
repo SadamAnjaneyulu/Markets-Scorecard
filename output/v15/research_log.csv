@@ -1,0 +1,9 @@
+step,test,finding,decision
+audit,"UK workbook ""VIX Index"" column vs true VIX","corr 0.05, no 2008/2020 spike, range 13.5-31.1","EXCLUDED. Not identifiable from the workbook, so it cannot be used as an input."
+audit,VIX identical across US/CH/JP workbooks,max abs diff 0.00,VIX/V2X are GLOBAL variables. Not used as country-level signals (per instruction); available only as a regime conditioner.
+audit,Combined price workbook vs the brief's price tickers,"All five columns are P/E ratios (range 8-39), near-identical to each workbook's BEst P/E; no index levels anywhere in the dataset","Technical pillar cannot use observed prices. A clearly labelled price PROXY is constructed in §2 and its dependence on EPS and P/E is stated, not denied."
+design,Technical pillar independence,Momentum is exactly the sum of the valuation and earnings legs; legs correlate -0.61,Technical is labelled a PRICE PROXY pillar. No independence claim is made; v14 R2 argument withdrawn.
+design,US Monthly_EPS vs BEst EPS comparability,US declines in 20% of months vs 35% for BEst markets; mean 6M revision 3.7% vs peers,Field difference is real and favours the US in any CS-only construction. Tested directly via the CS vs PIT->CS comparison.
+design,Within-country PIT standardisation vs cross-sectional only,"PIT->CS wins 13/34 pairs on matched months, mean dIC -0.007",NOT a general improvement. Route decided per pillar on MATCHED-sample evidence (below).
+decision,route rule,route chosen per pillar on MATCHED-sample evidence; only Valuation adopts PIT->CS,recorded
+decision,frozen,the four v15 constructions above are now FROZEN for the scorecard build,recorded

@@ -257,3 +257,24 @@ python3 slides/build_final_ppt.py
 ```bash
 python3 slides/check_ppt_reconciliation.py
 ```
+
+## v15 — Economic Signal Redesign (`notebook/Markets_Scorecard_v15.ipynb`, outputs `output/v15/`)
+Research layer only; v1–v14 untouched. Named v15 because v14 is the completed submission layer.
+
+**Data audit findings (new)**
+- The UK workbook's `VIX Index` column is **not** an equity volatility index: correlation 0.05 with the true VIX, and no spike in Oct-2008 or Mar-2020. Excluded as unidentifiable.
+- VIX is **identical** across the US, Swiss and Japanese workbooks, and Brent across four — these are global, not country-level, observations.
+- The combined price workbook holds **P/E ratios, not index levels** (range 8–39), near-identical to each workbook's BEst P/E. **No genuine index price exists anywhere in the dataset.**
+- EZ credit spread has 22 internal missing months; the Japan spread is stale (22.5% of months unchanged); Switzerland's spread is the euro-area series.
+
+**Pillar results (21 constructions × 2 standardisation routes, pre-declared)**
+| Pillar | Verdict | 6M IC full (v13/v14 → v15) |
+|---|---|---|
+| Macro | No improvement; FCI retained. PMI momentum and credit tightening have **negative** IC | 0.174 → 0.174 |
+| Micro | No improvement; apparent PIT gain was a sample-start artifact | 0.130 → 0.130 |
+| Valuation | Better construction (EY − 2Y vs own history), still unvalidated | −0.077 → +0.131 |
+| Technical | Better on paper, **rejected on robustness** (ex-US IC 0.007) | +0.037 → +0.133 |
+
+- The "economic acceleration + financial conditions" hypothesis is **refuted**: the combined impulse scores +0.058 at 6M vs +0.174 for FCI alone.
+- Walk-forward (construction re-chosen yearly from past data only): Macro +0.162 (t 2.26), Micro +0.113, Valuation +0.060, Technical +0.058.
+- v14's claim that the technical signal is independent of EPS and valuation is **withdrawn**: momentum is exactly Δlog P/E + Δlog EPS.

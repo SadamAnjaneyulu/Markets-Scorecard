@@ -1,0 +1,42 @@
+{
+  "frozen_pillars": {
+    "Macro": [
+      "M1 FCI easing 6M (v13 baseline)",
+      "CS"
+    ],
+    "Micro": [
+      "Mi1 EPS revision 6M (v13 baseline)",
+      "CS"
+    ],
+    "Valuation": [
+      "V3 Valuation spread (EY \u2212 2Y yield)",
+      "PIT\u2192CS"
+    ],
+    "Technical": [
+      "T4 Trend quality 12M (signed R\u00b2)",
+      "CS"
+    ]
+  },
+  "as_of": "2026-04",
+  "panel": [
+    "2005-12",
+    "2026-04"
+  ],
+  "n_constructions": 21,
+  "n_signal_series": 38,
+  "windows": {
+    "discovery": [
+      "panel start",
+      "2016-12"
+    ],
+    "embargo": [
+      "2017-01",
+      "2017-06"
+    ],
+    "examined": [
+      "2017-07",
+      "2026-04"
+    ]
+  },
+  "examined_is_not_holdout": true
+}

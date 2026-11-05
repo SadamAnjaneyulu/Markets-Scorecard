@@ -1,0 +1,20 @@
+pillar,construction,economic hypothesis
+Macro,M1 FCI easing 6M,Easier financing conditions support valuations and risk appetite with a lag
+Macro,M2 PMI momentum 3M,Accelerating activity raises expected earnings; momentum in the diffusion index leads the cycle
+Macro,M3 PMI level vs 50,Expansion versus contraction as a state variable rather than a change
+Macro,M4 Credit spread tightening 6M,Narrowing credit spreads signal improving funding and lower default risk
+Macro,M5 2Y yield decline 6M,Falling front-end yields indicate monetary easing and a lower discount rate
+Macro,M6 Economic+financial impulse,THE KEY TEST: activity acceleration combined with easing conditions beats conditions alone
+Macro,M7 Full macro composite,Diversifies across all four macro channels
+Micro,Mi1 EPS revision 6M,Analyst revisions are persistent; prices under-react
+Micro,Mi2 EPS revision 3M,Shorter window reacts faster to the revision cycle
+Micro,Mi3 EPS revision acceleration,The second derivative: inflection in the revision cycle leads the level
+Valuation,V1 P/E vs peers,Cross-market cheapness mean-reverts
+Valuation,V2 Earnings yield,Higher forward earnings yield compensates the holder more per unit of price
+Valuation,V3 Valuation spread (EY − 2Y),"Equity earnings yield versus the local risk-free alternative; a valuation PROXY, not an observed equity risk premium (no dividend or payout data, forward EPS is a consensus estimate)"
+Technical,T0 Low realised volatility 12M,Low-volatility anomaly
+Technical,T1 Momentum 6M,Trend persistence over the forecast horizon
+Technical,T2 Momentum 12−1M,"Classic momentum, skipping the 1M reversal"
+Technical,T3 Vol-adjusted momentum,Risk-scaled trend: the same drift is more informative when the path is calm
+Technical,T4 Trend quality (signed R²),"A smooth, directional trend reflects gradual information diffusion; SIGNED so a smooth decline scores negatively"
+Technical,T5 Small drawdown 12M,Shallow drawdowns indicate resilient demand
