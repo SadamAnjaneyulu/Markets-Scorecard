@@ -1,0 +1,9 @@
+item,finding,verdict
+Sharpe formula,"mean / sd of monthly NET returns x sqrt(12), rf = 0, computed on actual monthly portfolio returns",Correct for a zero-investment L/S (see 1d for rf and autocorrelation)
+Return alignment,weights at month-end t earn the month t+1 USD return; independent loop matches to machine precision,Correct; no look-ahead
+Long / short weights,+50% x2 / -50% x2 per tranche; held book gross averages 1.48 (range 0.50-2.00); net exposure 0,"As specified, but tranche netting means exposure is lower and time-varying. Sharpe is scale-free only if exposure is constant."
+Rebalancing / tranche accounting,"v12 used the average of target weights (positions re-weighted monthly, drift ignored). Drift-accurate engine changes Sharpe by the amounts in audit_engine_comparison.csv",Approximation acceptable if the two agree; v13 uses the drift-accurate engine throughout
+Transaction costs,one-way bps x Σ|Δw| over all five markets: both long and short legs charged; first build charged; v12 omitted drift-induced re-trading,Correct in principle; drift turnover now included
+Annualisation,monthly Sharpe x sqrt(12) = 0.68; Lo-adjusted for autocorrelation = 0.60,"sqrt(12) is mildly flattering here (Lo-adjusted 0.60 vs 0.68, driven by positive lag-3/4 autocorrelation from overlapping tranches); both are reported"
+Risk-free rate,L/S is self-financing: rf=0 is correct (collateral interest is not strategy alpha). Long-only ABSOLUTE Sharpe should use excess returns: no T-bill series supplied; US 2Y used as a disclosed proxy,"L/S fine. Long-only should be judged by information ratio vs EW, which needs no rf"
+Benchmark,"equal-weight 5 markets (USD, price return). No market-cap data supplied, so a cap-weighted DM benchmark (US ~70%) cannot be built",EW is consistent with a relative-ranking objective; disclosed

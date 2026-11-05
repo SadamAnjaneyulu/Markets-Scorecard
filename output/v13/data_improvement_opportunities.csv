@@ -1,0 +1,6 @@
+issue,supplied data,external access from this environment,what is needed
+No dividends / total return,none (price file = P/E),blocked (finance hosts denied by network policy),"Monthly USD net total-return indices for all 5, e.g. MSCI USA / EMU / UK / Switzerland / Japan Net TR USD (Bloomberg NDDU-family tickers - verify on terminal), or local TR indices (SPXT, SX5T/SXXT, TUKXG, SMIC, TPXDDVD) converted with the same month-end FX"
+Reconstructed price,P/E x forward EPS; US verified vs S&P 500 (v4),blocked,"Genuine price indices (MXUS, MXEMU, MXGB, MXCH, MXJP) to verify the other four reconstructions"
+Point-in-time consensus,no vintage information,blocked,Archived month-end snapshots of BEst EPS / P/E (as-of-date history) or I/B/E/S point-in-time
+Eurozone label,"price file labels EZ column ""MXEM"" (emerging markets ticker)",n/a,Confirm the Eurozone index definition with the data provider
+Swiss FCI / credit,euro-area GSEAFCI and LECPOAS reused,n/a,A Swiss FCI (e.g. GS Switzerland FCI) and CHF corporate spread

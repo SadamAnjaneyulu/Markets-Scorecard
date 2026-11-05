@@ -217,3 +217,15 @@ Results:
   - Bootstrap CI spans zero.
 - **Ranking as of 2026-04-30** (latest common date): OW US, Switzerland · N Eurozone · UW Japan, UK. Low conviction. The held 6-tranche book differs from the latest signal.
 - CSV input: `input_monthly_panel.csv`. Outputs: `output_monthly_scores.csv`, `output_current_ranking.csv`, `output_backtest_monthly.csv`, `backtest_summary.csv`.
+
+## v13 — Performance-improvement investigation (`notebook/Markets_Scorecard_v13.ipynb`, outputs `output/v13/`)
+Report: `output/v13/PERFORMANCE_REPORT.md`. The experiment grid and decision rules were pre-registered in `experiment_registry.json`.
+
+**Neither Sharpe 1.0 nor 1.5 is achievable with the supplied data.**
+- **Ceiling:** the best of 45 constructions in any window, before costs, is 0.81.
+- **Why:** the fundamental law implies IR ≈ 0.5 (IC 0.17, about 8 independent bets a year). Sharpe 1.0 needs an IC of about 0.35, or about 33 bets a year.
+- **Backtest audit:** v12's 0.678 reproduces. The Lo-adjusted Sharpe is 0.60. The tranches net to ~74% of the intended exposure.
+- **Concentration:** the baseline falls to 0.13 without its Eurozone P&L.
+- **Signal variants:** none passes the pre-registered rule.
+- **Walk-forward selection** of the best construction: 0.22.
+- **Data:** external total-return data is blocked by the network policy. The supplied "price" file is P/E, and its EZ column is mislabelled MXEM.

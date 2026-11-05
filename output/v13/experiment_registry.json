@@ -1,0 +1,127 @@
+{
+  "created_before_results": true,
+  "constructions": {
+    "C1 LS top1-bottom1": "Concentrate on the strongest and weakest signal; higher conviction, less diversification",
+    "C2 LS top2-bottom2": "Baseline (v7-v12)",
+    "C3 LO top1": "Long-only, single most attractive market vs EW",
+    "C4 LO top2": "Long-only, two most attractive markets vs EW (v12 long-only)",
+    "C5 LS rank-weighted": "Use the whole ranking: weights \u221d centred rank (2,1,0,-1,-2)/3, gross 2",
+    "C6 LS z-weighted": "Continuous: weights \u221d cross-sectional z, gross 2 (score weighting was weak in v7 - retested on FCI)",
+    "C7 LS top2-bottom2 inv-vol": "Volatility-adjusted sizing: within each leg weight \u221d 1/\u03c3 (trailing 36M), each leg gross 1",
+    "C8 LS top2-bottom2 ERC": "Risk-balanced across countries: equal risk contribution of the 4 signed positions (trailing 36M covariance), gross 2",
+    "C9 LS top2-bottom2 vol-tgt": "Baseline scaled to 10% ex-ante vol (trailing 36M covariance), leverage cap 3x"
+  },
+  "schedules": {
+    "monthly": {
+      "H": 1,
+      "step": 1,
+      "offsets": [
+        0
+      ]
+    },
+    "quarterly (discrete)": {
+      "H": 3,
+      "step": 3,
+      "offsets": [
+        0,
+        1,
+        2
+      ]
+    },
+    "six-monthly (discrete)": {
+      "H": 6,
+      "step": 6,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "3M overlapping tranches": {
+      "H": 3,
+      "step": 1,
+      "offsets": [
+        0
+      ]
+    },
+    "6M overlapping tranches": {
+      "H": 6,
+      "step": 1,
+      "offsets": [
+        0
+      ]
+    }
+  },
+  "signals": {
+    "S0 base: 6M chg / expanding sd": "v12 predictive signal",
+    "S1 lookback 3M": "faster reaction to financing shocks",
+    "S2 lookback 9M": "slower, less noisy",
+    "S3 lookback 12M": "annual change; slowest",
+    "S4 rolling 36M sd scaling": "standardise by RECENT volatility instead of full history",
+    "S5 own z-score (expanding mean & sd)": "country-level normalisation removing each FCI's own drift",
+    "S6 absolute change, cross-sectional z": "no country-level scaling: absolute index-point changes (mixed units - BFCIEU differs)",
+    "S7 FCI level, own z (60M)": "state rather than change: easy vs tight relative to own history",
+    "S8 3M moving average of S0 input": "smoothing to cut turnover from noisy month-to-month changes",
+    "S9 blend of 3/6/12M lookbacks": "ensemble across horizons to reduce parameter dependence",
+    "S10 hysteresis (enter rank<=2, exit rank>=4)": "persistence filter: hold a position until the signal clearly reverses",
+    "S11 threshold |z|>=0.5": "only take positions where the signal is clearly away from the average",
+    "S12 absolute confirmation": "long only if own FCI is actually easing (>0), short only if actually tightening (<0)",
+    "E1 FCI + EPS (equal weight)": "portfolio-level test of adding EPS revisions"
+  },
+  "exploratory": {
+    "X1 ERP vs credit, own z 36/60/120M": "discovery-only sensitivity",
+    "X2 trend R2 12M unsigned (as v10)": "discovery-only",
+    "X3 trend R2 12M SIGNED = sign(slope) x R2 (pre-registered fix)": "discovery-only",
+    "X4 signed trend R2 6M/24M": "discovery-only sensitivity"
+  },
+  "rules": {
+    "costs": [
+      0,
+      5,
+      10,
+      20
+    ],
+    "primary cost for decisions": 10,
+    "portfolio choice (Rule P)": "Among 45 construction x schedule configs on signal S0: highest DISCOVERY net Sharpe at 10 bps, subject to discovery net Sharpe at 20 bps > 0, turnover <= 8x p.a. and no single country contributing > 60% of discovery return. Discrete schedules use the mean across start offsets.",
+    "signal choice (Rule S)": "Replace S0 only if a variant (on the baseline C2 + 6M tranches) beats S0 by >= 0.20 DISCOVERY net Sharpe at 10 bps AND has discovery 6M IC >= S0. Otherwise keep S0.",
+    "EPS (Rule E)": "Add EPS only if FCI+EPS minus FCI-only paired monthly net return in DISCOVERY has block-bootstrap p < 0.10 (one-sided) on the Rule-P construction.",
+    "walk-forward": "Each January from 2013, pick the config with the best expanding-window net Sharpe (10 bps, >= 36 months of its history), hold it for 12 months; report the stitched return (switching costs between configs ignored - disclosed).",
+    "exploratory": "Evaluated on DISCOVERY only for promotion purposes. Examined-window numbers shown, labelled CONTAMINATED, and never used for a decision. No promotion in v13 regardless of outcome: independent evaluation requires post-2026-04 data.",
+    "reporting": "Every config and cost reported in CSV. Examined window = 2017-08..2026-04, NOT a fresh holdout."
+  },
+  "windows": {
+    "discovery": [
+      "2009-06",
+      "2016-12"
+    ],
+    "examined 2017-26": [
+      "2017-08",
+      "2026-04"
+    ],
+    "full": [
+      "2009-06",
+      "2026-04"
+    ]
+  },
+  "n_portfolio_configs": 45,
+  "n_signal_specs": 14,
+  "n_exploratory": 4,
+  "amendments": [
+    {
+      "amendment": "C8 ERC solver",
+      "when": "after first grid run",
+      "what": "replaced a fixed-point iteration that diverged when signed positions had negative covariance (C8 vol 17-26% vs ~6-8% for every other L/S) with the convex Spinu formulation; equal risk contributions now asserted to within 1%",
+      "spec changed?": "No - same definition (equal risk contribution, gross 2); bug fix only"
+    }
+  ],
+  "outcomes": {
+    "Rule P pick": "C6 LS z-weighted | 3M overlapping tranches",
+    "Rule S variants passing": [],
+    "Rule E add EPS": true,
+    "walk-forward Sharpe 2013-2026 (10bps)": 0.2190558131948101,
+    "max Sharpe any config any window at 0 bps": 0.8147524441421466
+  }
+}
