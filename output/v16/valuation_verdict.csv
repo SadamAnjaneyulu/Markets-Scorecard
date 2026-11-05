@@ -1,0 +1,8 @@
+question,answer
+Does own-history standardisation help?,Yes. 6M full IC +0.131 vs +0.039 for cross-sectional only.
+Does the 2Y leg help?,Yes. Examined 6M IC -0.053 with the 2Y leg vs -0.138 without it.
+Is it driven by outliers?,No. Median monthly IC +0.200; dropping the best six months leaves +0.106.
+Is it driven by one country?,"Full-sample: no — every leave-one-out IC stays positive (min +0.092). Out of sample: YES — the US alone contributes -0.078 of the -0.053 examined IC, and EXCLUDING the US the examined 6M IC is +0.076."
+Is the negative out-of-sample result resolved?,NO. The examined-window IC is -0.053 for total return and the walk-forward IC is +0.060. The signal predicts MULTIPLE EXPANSION (+0.148 examined) but the earnings leg offsets it.
+What is the cause?,The US. A negative-rate explanation was tested and REFUTED (IC +0.153 when no market has a negative 2Y vs +0.126 when some do). The US was persistently the most expensive market on this measure and persistently outperformed from 2017; the signal therefore ranked it last and was wrong. The other four markets behaved as the hypothesis predicts.
+Does it work anywhere out of sample?,"Yes, outside the US: the ex-US examined 6M IC is +0.076. That is a genuine but narrower claim, and it cannot be acted on in a five-market scorecard that must rank the US."

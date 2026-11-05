@@ -1,0 +1,7 @@
+measure,continuation (+),reversal (−),FROZEN direction,declared hypothesis
+A 6M momentum,0.04488188976377953,-0.04488188976377953,continuation (+),continuation: trends persist over the forecast horizon
+B 12−1M momentum,0.11916666666666667,-0.11916666666666667,continuation (+),continuation: classic momentum skipping the 1M reversal
+C 1M return,-0.013636363636363632,0.013636363636363632,reversal (−),reversal expected: short-horizon liquidity/overreaction effects
+D 3M return,-0.02384615384615385,0.02384615384615385,reversal (−),either: 3M sits between the reversal and momentum horizons
+E Signed trend quality 12M,0.12131147540983608,-0.12131147540983608,continuation (+),continuation: smooth directional trends reflect gradual information diffusion
+F Vol-adjusted mom 12−1M,0.11499999999999999,-0.11499999999999999,continuation (+),continuation: the same drift is more informative when the path is calm

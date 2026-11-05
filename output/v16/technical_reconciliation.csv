@@ -1,0 +1,4 @@
+figure,signal,sample,months,IC
+Examined-window IC (+0.163),Signed trend quality only — one fixed construction,signal months 2017-07..2025-10,100,0.163
+Walk-forward IC (+0.058),whichever of the 6 candidates was selected that year (2 different ones used),signal months 2014-01..2025-10,142,0.11338028169014083
+LIKE-FOR-LIKE: trend quality on the walk-forward months,Signed trend quality only,signal months 2014-01..2025-10,142,0.17535211267605638

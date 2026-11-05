@@ -1,0 +1,389 @@
+{
+  "as_of": "2026-04",
+  "panel_start": "2005-12",
+  "panel_months": 245,
+  "spx_mad_pp": 0.03877177029750034,
+  "labels": {
+    "Macro": "PREDICTIVE (provisional)",
+    "Micro": "PREDICTIVE (provisional, 3M)",
+    "Valuation": "DIAGNOSTIC",
+    "Technical": "DIAGNOSTIC"
+  },
+  "ic": {
+    "Macro": {
+      "discovery 3M": 0.07934782608695652,
+      "discovery 6M": 0.18586956521739129,
+      "examined 3M": 0.1271844660194175,
+      "examined 6M": 0.17300000000000001
+    },
+    "Micro": {
+      "discovery 3M": 0.13385826771653547,
+      "discovery 6M": 0.17086614173228348,
+      "examined 3M": 0.1310679611650486,
+      "examined 6M": 0.07400000000000001
+    },
+    "Valuation": {
+      "discovery 3M": 0.14387755102040817,
+      "discovery 6M": 0.30102040816326536,
+      "examined 3M": -0.09320388349514563,
+      "examined 6M": -0.053000000000000005
+    },
+    "Technical": {
+      "discovery 3M": 0.01147540983606558,
+      "discovery 6M": 0.12131147540983608,
+      "examined 3M": 0.15825242718446603,
+      "examined 6M": 0.163
+    }
+  },
+  "ci_exam": {
+    "Macro": {
+      "3M": [
+        -0.036917475728155354,
+        0.24953883495145626
+      ],
+      "6M": [
+        -0.005024999999999996,
+        0.345
+      ]
+    },
+    "Micro": {
+      "3M": [
+        -0.03497572815533982,
+        0.2689320388349515
+      ],
+      "6M": [
+        -0.139,
+        0.27399999999999997
+      ]
+    },
+    "Valuation": {
+      "3M": [
+        -0.22912621359223306,
+        0.023325242718446465
+      ],
+      "6M": [
+        -0.2600500000000001,
+        0.1360749999999996
+      ]
+    },
+    "Technical": {
+      "3M": [
+        -0.0029368932038834903,
+        0.2912621359223301
+      ],
+      "6M": [
+        0.033,
+        0.32602499999999995
+      ]
+    }
+  },
+  "ic2014": {
+    "Macro": {
+      "3M": 0.10689655172413794,
+      "6M": 0.1619718309859155
+    },
+    "Micro": {
+      "3M": 0.16551724137931034,
+      "6M": 0.1647887323943662
+    },
+    "Valuation": {
+      "3M": -0.011724137931034485,
+      "6M": 0.059859154929577475
+    },
+    "Technical": {
+      "3M": 0.1482758620689655,
+      "6M": 0.17535211267605638
+    }
+  },
+  "exus": {
+    "Macro": 0.15050505050505053,
+    "Micro": 0.10472103004291845,
+    "Valuation": 0.19117647058823528,
+    "Technical": 0.007017543859649131
+  },
+  "score_ic": {
+    "Diagnostic (4 pillars, equal weight)": {
+      "discovery 3M": 0.19456521739130433,
+      "discovery 6M": 0.3532608695652174,
+      "examined 3M": 0.09805825242718447,
+      "examined 6M": 0.073
+    },
+    "Predictive (Macro + Micro)": {
+      "discovery 3M": 0.1597826086956522,
+      "discovery 6M": 0.25869565217391305,
+      "examined 3M": 0.1563106796116505,
+      "examined 6M": 0.12300000000000001
+    }
+  },
+  "bt": {
+    "full": {
+      "Diagnostic (4-pillar)|long-only top-2|Return % p.a.": 9.148690630464218,
+      "Diagnostic (4-pillar)|long-only top-2|Vol % p.a.": 13.916512250031502,
+      "Diagnostic (4-pillar)|long-only top-2|Sharpe": 0.7007560591557649,
+      "Diagnostic (4-pillar)|long-only top-2|Max drawdown %": -26.772088939048878,
+      "Diagnostic (4-pillar)|long-short top2/bottom2|Return % p.a.": 3.7132336702309976,
+      "Diagnostic (4-pillar)|long-short top2/bottom2|Vol % p.a.": 6.40023365875175,
+      "Diagnostic (4-pillar)|long-short top2/bottom2|Sharpe": 0.6022272807401658,
+      "Diagnostic (4-pillar)|long-short top2/bottom2|Max drawdown %": -12.691546769482109,
+      "Diagnostic (4-pillar)|long-short top1/bottom1|Return % p.a.": 5.054851602354482,
+      "Diagnostic (4-pillar)|long-short top1/bottom1|Vol % p.a.": 9.083314272780676,
+      "Diagnostic (4-pillar)|long-short top1/bottom1|Sharpe": 0.5890411054654047,
+      "Diagnostic (4-pillar)|long-short top1/bottom1|Max drawdown %": -23.05102930275831,
+      "Predictive (Macro+Micro)|long-only top-2|Return % p.a.": 9.21930608326984,
+      "Predictive (Macro+Micro)|long-only top-2|Vol % p.a.": 13.917763003278061,
+      "Predictive (Macro+Micro)|long-only top-2|Sharpe": 0.7052646969760369,
+      "Predictive (Macro+Micro)|long-only top-2|Max drawdown %": -28.06768362414006,
+      "Predictive (Macro+Micro)|long-short top2/bottom2|Return % p.a.": 4.008331598966475,
+      "Predictive (Macro+Micro)|long-short top2/bottom2|Vol % p.a.": 6.379162581712104,
+      "Predictive (Macro+Micro)|long-short top2/bottom2|Sharpe": 0.6487348722655286,
+      "Predictive (Macro+Micro)|long-short top2/bottom2|Max drawdown %": -13.44032418537331,
+      "Equal-weight benchmark|long-only|Return % p.a.": 7.144345512507444,
+      "Equal-weight benchmark|long-only|Vol % p.a.": 14.30186485156087,
+      "Equal-weight benchmark|long-only|Sharpe": 0.5554360603751783,
+      "Equal-weight benchmark|long-only|Max drawdown %": -27.217376460287788
+    },
+    "discovery": {
+      "Diagnostic (4-pillar)|long-only top-2|Return % p.a.": 9.465833620613417,
+      "Diagnostic (4-pillar)|long-only top-2|Vol % p.a.": 14.086902451559247,
+      "Diagnostic (4-pillar)|long-only top-2|Sharpe": 0.713952182384213,
+      "Diagnostic (4-pillar)|long-only top-2|Max drawdown %": -19.348138338319654,
+      "Diagnostic (4-pillar)|long-short top2/bottom2|Return % p.a.": 6.435730618514746,
+      "Diagnostic (4-pillar)|long-short top2/bottom2|Vol % p.a.": 6.741310589815325,
+      "Diagnostic (4-pillar)|long-short top2/bottom2|Sharpe": 0.9607675654910374,
+      "Diagnostic (4-pillar)|long-short top2/bottom2|Max drawdown %": -12.088619574901694,
+      "Diagnostic (4-pillar)|long-short top1/bottom1|Return % p.a.": 8.27709929384024,
+      "Diagnostic (4-pillar)|long-short top1/bottom1|Vol % p.a.": 9.7126801517924,
+      "Diagnostic (4-pillar)|long-short top1/bottom1|Sharpe": 0.8695186593536128,
+      "Diagnostic (4-pillar)|long-short top1/bottom1|Max drawdown %": -20.020669053405427,
+      "Predictive (Macro+Micro)|long-only top-2|Return % p.a.": 8.734816620060325,
+      "Predictive (Macro+Micro)|long-only top-2|Vol % p.a.": 13.697934774130932,
+      "Predictive (Macro+Micro)|long-only top-2|Sharpe": 0.6811234236419473,
+      "Predictive (Macro+Micro)|long-only top-2|Max drawdown %": -18.712471622490135,
+      "Predictive (Macro+Micro)|long-short top2/bottom2|Return % p.a.": 5.30656046341309,
+      "Predictive (Macro+Micro)|long-short top2/bottom2|Vol % p.a.": 6.881876798785429,
+      "Predictive (Macro+Micro)|long-short top2/bottom2|Sharpe": 0.7869718398394717,
+      "Predictive (Macro+Micro)|long-short top2/bottom2|Max drawdown %": -13.44032418537331,
+      "Equal-weight benchmark|long-only|Return % p.a.": 5.6731673646752245,
+      "Equal-weight benchmark|long-only|Vol % p.a.": 14.217756841968576,
+      "Equal-weight benchmark|long-only|Sharpe": 0.4596041601640937,
+      "Equal-weight benchmark|long-only|Max drawdown %": -20.12979283672507
+    },
+    "examined": {
+      "Diagnostic (4-pillar)|long-only top-2|Return % p.a.": 8.013341352117664,
+      "Diagnostic (4-pillar)|long-only top-2|Vol % p.a.": 14.237374415681161,
+      "Diagnostic (4-pillar)|long-only top-2|Sharpe": 0.6141090989610098,
+      "Diagnostic (4-pillar)|long-only top-2|Max drawdown %": -26.772088939048857,
+      "Diagnostic (4-pillar)|long-short top2/bottom2|Return % p.a.": 1.7122934137710155,
+      "Diagnostic (4-pillar)|long-short top2/bottom2|Vol % p.a.": 6.2074005390473665,
+      "Diagnostic (4-pillar)|long-short top2/bottom2|Sharpe": 0.30435502567399614,
+      "Diagnostic (4-pillar)|long-short top2/bottom2|Max drawdown %": -12.691546769482109,
+      "Diagnostic (4-pillar)|long-short top1/bottom1|Return % p.a.": 2.9569860651340596,
+      "Diagnostic (4-pillar)|long-short top1/bottom1|Vol % p.a.": 8.712206324998412,
+      "Diagnostic (4-pillar)|long-short top1/bottom1|Sharpe": 0.3777500678200241,
+      "Diagnostic (4-pillar)|long-short top1/bottom1|Max drawdown %": -23.051029302758263,
+      "Predictive (Macro+Micro)|long-only top-2|Return % p.a.": 8.808062164629348,
+      "Predictive (Macro+Micro)|long-only top-2|Vol % p.a.": 14.569116844952621,
+      "Predictive (Macro+Micro)|long-only top-2|Sharpe": 0.6537495787501847,
+      "Predictive (Macro+Micro)|long-only top-2|Max drawdown %": -28.067683624140074,
+      "Predictive (Macro+Micro)|long-short top2/bottom2|Return % p.a.": 3.3635706928281106,
+      "Predictive (Macro+Micro)|long-short top2/bottom2|Vol % p.a.": 6.101826563355898,
+      "Predictive (Macro+Micro)|long-short top2/bottom2|Sharpe": 0.5729707456574358,
+      "Predictive (Macro+Micro)|long-short top2/bottom2|Max drawdown %": -13.405036948884696,
+      "Equal-weight benchmark|long-only|Return % p.a.": 7.329225425071972,
+      "Equal-weight benchmark|long-only|Vol % p.a.": 14.836106082094178,
+      "Equal-weight benchmark|long-only|Sharpe": 0.5520678165837919,
+      "Equal-weight benchmark|long-only|Max drawdown %": -27.217376460287788
+    }
+  },
+  "bt_extra": {
+    "full": {
+      "LO_ir": 0.5471824744698653,
+      "LO_excess": 1.8083088123557967,
+      "LO_turn": 1.8014378373916407,
+      "LS2_turn": 3.8041230485262783,
+      "PRED_LO_ir": 0.5632955846276337
+    },
+    "discovery": {
+      "LO_ir": 1.0242264931794078,
+      "LO_excess": 3.5228345555539793,
+      "LO_turn": 1.8538523220393763,
+      "LS2_turn": 3.774443805107663,
+      "PRED_LO_ir": 0.7885948311687607
+    },
+    "examined": {
+      "LO_ir": 0.17084846901099737,
+      "LO_excess": 0.552764482637244,
+      "LO_turn": 1.739693382599088,
+      "LS2_turn": 3.8178467413909587,
+      "PRED_LO_ir": 0.415110387858621
+    }
+  },
+  "bt_cost": {
+    "0": 0.6624703697457364,
+    "5": 0.6323397629697789,
+    "10": 0.6022272807401658,
+    "20": 0.5420672441697582
+  },
+  "bt_window": {
+    "full": "2009-06..2026-04",
+    "discovery": "2009-06..2016-12",
+    "examined": "2017-08..2026-04"
+  },
+  "attrib": {
+    "Macro": {
+      "full": 0.6608144362824798,
+      "discovery": 0.7089575693229958,
+      "examined": 0.6795661353397787
+    },
+    "Micro": {
+      "full": 0.5171108419666024,
+      "discovery": 0.7716391367288643,
+      "examined": 0.348544537164926
+    },
+    "Valuation": {
+      "full": 0.37103605519547195,
+      "discovery": 0.7971571839370175,
+      "examined": -0.14210726086242317
+    },
+    "Technical": {
+      "full": 0.3009526008230872,
+      "discovery": 0.2721026514255072,
+      "examined": 0.39300778385679985
+    },
+    "Diagnostic (4-pillar)": {
+      "full": 0.6022272807401658,
+      "discovery": 0.9607675654910374,
+      "examined": 0.30435502567399614
+    },
+    "Predictive (Macro+Micro)": {
+      "full": 0.6487348722655286,
+      "discovery": 0.7869718398394718,
+      "examined": 0.5729707456574358
+    }
+  },
+  "current": {
+    "US": {
+      "diag_rank": 1,
+      "pred_rank": 1,
+      "diag": 0.564584284792562,
+      "pred": 1.1782059123857613,
+      "call": "OVERWEIGHT",
+      "call_diag": "OVERWEIGHT",
+      "Macro": 1.0912129170138956,
+      "Micro": 1.2651989077576273,
+      "Valuation": 0.6922519357922696,
+      "Technical": -0.7903266213935446,
+      "Macro_contrib": 0.2728032292534739,
+      "Micro_contrib": 0.31629972693940683,
+      "Valuation_contrib": 0.1730629839480674,
+      "Technical_contrib": -0.19758165534838615,
+      "fci": 0.010852956297295973,
+      "eps": 16.465399070599073,
+      "pe": 20.6951,
+      "spread": 3.9856616957637314
+    },
+    "Eurozone": {
+      "diag_rank": 5,
+      "pred_rank": 3,
+      "diag": -0.22923340331580877,
+      "pred": -0.03620598383796153,
+      "call": "NEUTRAL",
+      "call_diag": "UNDERWEIGHT",
+      "Macro": 0.3170864044965586,
+      "Micro": -0.3894983721724817,
+      "Valuation": -0.6422454515248228,
+      "Technical": -0.20227619406248926,
+      "Macro_contrib": 0.07927160112413965,
+      "Micro_contrib": -0.09737459304312042,
+      "Valuation_contrib": -0.1605613628812057,
+      "Technical_contrib": -0.050569048515622314,
+      "fci": -0.126093869609894,
+      "eps": 7.250316204602036,
+      "pe": 14.8517,
+      "spread": 4.090235925853607
+    },
+    "UK": {
+      "diag_rank": 4,
+      "pred_rank": 5,
+      "diag": -0.19177082800391493,
+      "pred": -0.5915085318049348,
+      "call": "UNDERWEIGHT",
+      "call_diag": "UNDERWEIGHT",
+      "Macro": -1.5898969584402625,
+      "Micro": 0.40687989483039294,
+      "Valuation": -0.6572345549097235,
+      "Technical": 1.0731683065039335,
+      "Macro_contrib": -0.3974742396100656,
+      "Micro_contrib": 0.10171997370759824,
+      "Valuation_contrib": -0.16430863872743087,
+      "Technical_contrib": 0.26829207662598337,
+      "fci": -0.46344870036330754,
+      "eps": 11.685382250894548,
+      "pe": 12.8938,
+      "spread": 3.3036655136577266
+    },
+    "Switzerland": {
+      "diag_rank": 3,
+      "pred_rank": 4,
+      "diag": -0.18041472348902582,
+      "pred": -0.528656220957625,
+      "call": "UNDERWEIGHT",
+      "call_diag": "NEUTRAL",
+      "Macro": 0.3775473079976541,
+      "Micro": -1.434859749912904,
+      "Valuation": 1.4198550066916082,
+      "Technical": -1.0842014587324615,
+      "Macro_contrib": 0.09438682699941353,
+      "Micro_contrib": -0.358714937478226,
+      "Valuation_contrib": 0.35496375167290206,
+      "Technical_contrib": -0.2710503646831154,
+      "fci": -0.11539803541215941,
+      "eps": 1.4286521228204396,
+      "pe": 18.3292,
+      "spread": 5.276775483927285
+    },
+    "Japan": {
+      "diag_rank": 2,
+      "pred_rank": 2,
+      "diag": 0.036834670016189536,
+      "pred": -0.021835175785239858,
+      "call": "OVERWEIGHT",
+      "call_diag": "OVERWEIGHT",
+      "Macro": -0.19594967106784547,
+      "Micro": 0.15227931949736576,
+      "Valuation": -0.8126269360493309,
+      "Technical": 1.0036359676845688,
+      "Macro_contrib": -0.04898741776696137,
+      "Micro_contrib": 0.03806982987434144,
+      "Valuation_contrib": -0.20315673401233272,
+      "Technical_contrib": 0.2509089919211422,
+      "fci": -0.2168525001287692,
+      "eps": 10.26750030482435,
+      "pe": 17.611,
+      "spread": 4.293269263528477
+    }
+  },
+  "order": [
+    "US",
+    "Japan",
+    "Switzerland",
+    "UK",
+    "Eurozone"
+  ],
+  "gap23": 0.21724939350521535,
+  "call_agreement": 3,
+  "calls_diag": {
+    "US": "OVERWEIGHT",
+    "Japan": "OVERWEIGHT",
+    "Switzerland": "NEUTRAL",
+    "UK": "UNDERWEIGHT",
+    "Eurozone": "UNDERWEIGHT"
+  },
+  "calls_pred": {
+    "US": "OVERWEIGHT",
+    "Japan": "OVERWEIGHT",
+    "Switzerland": "UNDERWEIGHT",
+    "UK": "UNDERWEIGHT",
+    "Eurozone": "NEUTRAL"
+  }
+}

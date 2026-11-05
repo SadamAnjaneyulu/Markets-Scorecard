@@ -1,0 +1,34 @@
+{
+  "frozen": {
+    "Macro": {
+      "indicator": "FCI 6M easing",
+      "confidence": "PROVISIONAL \u2014 predictive"
+    },
+    "Micro": {
+      "indicator": "EPS revision 6M",
+      "confidence": "PROVISIONAL \u2014 predictive at 3M"
+    },
+    "Valuation": {
+      "indicator": "Earnings-yield spread vs own history",
+      "confidence": "DIAGNOSTIC \u2014 not predictive out of sample"
+    },
+    "Technical": {
+      "indicator": "Signed trend quality 12M",
+      "confidence": "DIAGNOSTIC ONLY \u2014 no independent information"
+    }
+  },
+  "predictive_pillars": [
+    "Macro",
+    "Micro"
+  ],
+  "diagnostic_only_pillars": [
+    "Valuation",
+    "Technical"
+  ],
+  "as_of": "2026-04",
+  "panel": [
+    "2005-12",
+    "2026-04"
+  ],
+  "examined_window_is_not_holdout": true
+}

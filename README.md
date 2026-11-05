@@ -278,3 +278,22 @@ Research layer only; v1–v14 untouched. Named v15 because v14 is the completed 
 - The "economic acceleration + financial conditions" hypothesis is **refuted**: the combined impulse scores +0.058 at 6M vs +0.174 for FCI alone.
 - Walk-forward (construction re-chosen yearly from past data only): Macro +0.162 (t 2.26), Micro +0.113, Valuation +0.060, Technical +0.058.
 - v14's claim that the technical signal is independent of EPS and valuation is **withdrawn**: momentum is exactly Δlog P/E + Δlog EPS.
+
+## v16 — Focused investigation and FINAL deliverables
+- **Investigation:** `notebook/Markets_Scorecard_v16_investigation.ipynb`
+- **Final notebook:** `notebook/Markets_Scorecard_v16_FINAL.ipynb`
+- **Outputs:** `output/v16/` (CSV input/output, charts, `METHODOLOGY_AND_LIMITATIONS.md`)
+- **Deck:** `slides/Markets_Scorecard_v16_FINAL.pptx` (5 slides), built by `slides/build_v16_ppt.py`, verified by `slides/check_v16_ppt.py` (104 numbers, all reconcile)
+
+**Investigation results**
+| Pillar | Question asked | Answer |
+|---|---|---|
+| Micro | Do revision acceleration and momentum add to the 6M revision? | **No** — both have negative IC and subtract when blended (ΔIC −0.09, t −2.4) |
+| Valuation | Can the negative out-of-sample result be resolved? | **No** — traced to the US, which was persistently the most expensive market and kept outperforming. Not outlier-driven; a negative-rate explanation was tested and refuted. Ex-US examined IC is +0.076 |
+| Technical | Does any price-path signal survive? | **No** — six measures tested with directions frozen on discovery. The best (signed trend quality) keeps only 43% of its IC after removing Micro and Valuation and falls to +0.007 without the US. No momentum variant survives ex-US; reversal is absent |
+
+- **Reconciled** the examined IC +0.163 against the walk-forward +0.058: different calculations. The first is one fixed construction over 2017–2026; the second is the result of *choosing* a technical construction each year across v15's 12-candidate menu. On the same months the fixed signal scores +0.175. With v16's restricted six-measure menu the walk-forward is +0.113.
+- **Frozen pillars:** Macro FCI 6M easing · Micro EPS revision 6M · Valuation earnings-yield spread vs own history · Technical signed trend quality.
+- **Labels:** Macro and Micro PREDICTIVE (provisional); Valuation and Technical DIAGNOSTIC only, retained on the scorecard with zero predictive weight.
+- **Backtest (full period, net 10 bps):** diagnostic long-only Sharpe 0.70 vs benchmark 0.56; predictive long-only 0.71; long-short 0.60. Attribution shows the edge is Macro and Valuation drags.
+- **Ranking as of 30-Apr-2026:** both views overweight the US and Japan and underweight the UK; they disagree on the Eurozone and Switzerland. Low conviction.

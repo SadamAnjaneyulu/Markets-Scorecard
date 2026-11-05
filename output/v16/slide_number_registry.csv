@@ -1,0 +1,105 @@
+slide,displayed,file,filter,column,format
+1,PREDICTIVE (provisional),signal_classification.csv,"{""pillar"": ""Macro""}",confidence label,{}
+1,FCI 6M easing,signal_classification.csv,"{""pillar"": ""Macro""}",indicator,{}
+1,"PREDICTIVE (provisional, 3M)",signal_classification.csv,"{""pillar"": ""Micro""}",confidence label,{}
+1,EPS revision 6M,signal_classification.csv,"{""pillar"": ""Micro""}",indicator,{}
+1,DIAGNOSTIC,signal_classification.csv,"{""pillar"": ""Valuation""}",confidence label,{}
+1,Earnings-yield spread vs own history,signal_classification.csv,"{""pillar"": ""Valuation""}",indicator,{}
+1,DIAGNOSTIC,signal_classification.csv,"{""pillar"": ""Technical""}",confidence label,{}
+1,Signed trend quality 12M,signal_classification.csv,"{""pillar"": ""Technical""}",indicator,{}
+2,PREDICTIVE (provisional),signal_classification.csv,"{""pillar"": ""Macro""}",confidence label,{}
+2,+0.079,predictive_power.csv,"{""pillar"": ""Macro"", ""horizon"": ""3M"", ""window"": ""discovery""}",IC,{:+.3f}
+2,+0.127,predictive_power.csv,"{""pillar"": ""Macro"", ""horizon"": ""3M"", ""window"": ""examined""}",IC,{:+.3f}
+2,+0.186,predictive_power.csv,"{""pillar"": ""Macro"", ""horizon"": ""6M"", ""window"": ""discovery""}",IC,{:+.3f}
+2,+0.173,predictive_power.csv,"{""pillar"": ""Macro"", ""horizon"": ""6M"", ""window"": ""examined""}",IC,{:+.3f}
+2,+0.151,robustness.csv,"{""pillar"": ""Macro"", ""horizon"": ""6M""}",ex-US IC,{:+.3f}
+2,"PREDICTIVE (provisional, 3M)",signal_classification.csv,"{""pillar"": ""Micro""}",confidence label,{}
+2,+0.134,predictive_power.csv,"{""pillar"": ""Micro"", ""horizon"": ""3M"", ""window"": ""discovery""}",IC,{:+.3f}
+2,+0.131,predictive_power.csv,"{""pillar"": ""Micro"", ""horizon"": ""3M"", ""window"": ""examined""}",IC,{:+.3f}
+2,+0.171,predictive_power.csv,"{""pillar"": ""Micro"", ""horizon"": ""6M"", ""window"": ""discovery""}",IC,{:+.3f}
+2,+0.074,predictive_power.csv,"{""pillar"": ""Micro"", ""horizon"": ""6M"", ""window"": ""examined""}",IC,{:+.3f}
+2,+0.105,robustness.csv,"{""pillar"": ""Micro"", ""horizon"": ""6M""}",ex-US IC,{:+.3f}
+2,DIAGNOSTIC,signal_classification.csv,"{""pillar"": ""Valuation""}",confidence label,{}
+2,+0.144,predictive_power.csv,"{""pillar"": ""Valuation"", ""horizon"": ""3M"", ""window"": ""discovery""}",IC,{:+.3f}
+2,-0.093,predictive_power.csv,"{""pillar"": ""Valuation"", ""horizon"": ""3M"", ""window"": ""examined""}",IC,{:+.3f}
+2,+0.301,predictive_power.csv,"{""pillar"": ""Valuation"", ""horizon"": ""6M"", ""window"": ""discovery""}",IC,{:+.3f}
+2,-0.053,predictive_power.csv,"{""pillar"": ""Valuation"", ""horizon"": ""6M"", ""window"": ""examined""}",IC,{:+.3f}
+2,+0.191,robustness.csv,"{""pillar"": ""Valuation"", ""horizon"": ""6M""}",ex-US IC,{:+.3f}
+2,DIAGNOSTIC,signal_classification.csv,"{""pillar"": ""Technical""}",confidence label,{}
+2,+0.011,predictive_power.csv,"{""pillar"": ""Technical"", ""horizon"": ""3M"", ""window"": ""discovery""}",IC,{:+.3f}
+2,+0.158,predictive_power.csv,"{""pillar"": ""Technical"", ""horizon"": ""3M"", ""window"": ""examined""}",IC,{:+.3f}
+2,+0.121,predictive_power.csv,"{""pillar"": ""Technical"", ""horizon"": ""6M"", ""window"": ""discovery""}",IC,{:+.3f}
+2,+0.163,predictive_power.csv,"{""pillar"": ""Technical"", ""horizon"": ""6M"", ""window"": ""examined""}",IC,{:+.3f}
+2,+0.007,robustness.csv,"{""pillar"": ""Technical"", ""horizon"": ""6M""}",ex-US IC,{:+.3f}
+2,+0.119,robustness.csv,"{""pillar"": ""Macro"", ""horizon"": ""6M""}",min leave-one-out IC,{:+.3f}
+2,+0.162,robustness.csv,"{""pillar"": ""Macro"", ""horizon"": ""6M""}",IC 2014-onward (frozen),{:+.3f}
+2,2.26,robustness.csv,"{""pillar"": ""Macro"", ""horizon"": ""6M""}",IC 2014-onward t,{:.2f}
+2,-0.053,predictive_power.csv,"{""pillar"": ""Valuation"", ""horizon"": ""6M"", ""window"": ""examined""}",IC,{:+.3f}
+2,+0.007,robustness.csv,"{""pillar"": ""Technical"", ""horizon"": ""6M""}",ex-US IC,{:+.3f}
+3,+0.353,scorecard_ic.csv,"{""score"": ""Diagnostic (4 pillars, equal weight)"", ""horizon"": ""6M"", ""window"": ""discovery""}",IC,{:+.3f}
+3,+0.073,scorecard_ic.csv,"{""score"": ""Diagnostic (4 pillars, equal weight)"", ""horizon"": ""6M"", ""window"": ""examined""}",IC,{:+.3f}
+3,+0.259,scorecard_ic.csv,"{""score"": ""Predictive (Macro + Micro)"", ""horizon"": ""6M"", ""window"": ""discovery""}",IC,{:+.3f}
+3,+0.123,scorecard_ic.csv,"{""score"": ""Predictive (Macro + Micro)"", ""horizon"": ""6M"", ""window"": ""examined""}",IC,{:+.3f}
+4,9.1,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Diagnostic (4-pillar)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Return % p.a.,{:.1f}
+4,9.2,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Predictive (Macro+Micro)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Return % p.a.,{:.1f}
+4,7.1,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Equal-weight benchmark"", ""book"": ""long-only"", ""cost bps"": 0}",Return % p.a.,{:.1f}
+4,3.7,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Diagnostic (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Return % p.a.,{:.1f}
+4,13.9,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Diagnostic (4-pillar)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Vol % p.a.,{:.1f}
+4,13.9,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Predictive (Macro+Micro)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Vol % p.a.,{:.1f}
+4,14.3,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Equal-weight benchmark"", ""book"": ""long-only"", ""cost bps"": 0}",Vol % p.a.,{:.1f}
+4,6.4,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Diagnostic (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Vol % p.a.,{:.1f}
+4,0.70,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Diagnostic (4-pillar)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Sharpe,{:.2f}
+4,0.71,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Predictive (Macro+Micro)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Sharpe,{:.2f}
+4,0.56,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Equal-weight benchmark"", ""book"": ""long-only"", ""cost bps"": 0}",Sharpe,{:.2f}
+4,0.60,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Diagnostic (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Sharpe,{:.2f}
+4,-26.8,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Diagnostic (4-pillar)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Max drawdown %,{:.1f}
+4,-28.1,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Predictive (Macro+Micro)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Max drawdown %,{:.1f}
+4,-27.2,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Equal-weight benchmark"", ""book"": ""long-only"", ""cost bps"": 0}",Max drawdown %,{:.1f}
+4,-12.7,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Diagnostic (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Max drawdown %,{:.1f}
+4,1.8,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Diagnostic (4-pillar)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Turnover p.a. (x),{:.1f}
+4,2.1,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Predictive (Macro+Micro)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Turnover p.a. (x),{:.1f}
+4,3.8,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Diagnostic (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Turnover p.a. (x),{:.1f}
+4,0.61,backtest_summary.csv,"{""window"": ""examined"", ""strategy"": ""Diagnostic (4-pillar)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Sharpe,{:.2f}
+4,0.65,backtest_summary.csv,"{""window"": ""examined"", ""strategy"": ""Predictive (Macro+Micro)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Sharpe,{:.2f}
+4,0.55,backtest_summary.csv,"{""window"": ""examined"", ""strategy"": ""Equal-weight benchmark"", ""book"": ""long-only"", ""cost bps"": 0}",Sharpe,{:.2f}
+4,0.30,backtest_summary.csv,"{""window"": ""examined"", ""strategy"": ""Diagnostic (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Sharpe,{:.2f}
+4,0.55,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Diagnostic (4-pillar)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Information ratio,{:.2f}
+4,0.56,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Predictive (Macro+Micro)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Information ratio,{:.2f}
+4,+0.68,backtest_pillar_attribution.csv,"{""run alone"": ""Macro"", ""window"": ""examined""}",Sharpe,{:+.2f}
+4,+0.35,backtest_pillar_attribution.csv,"{""run alone"": ""Micro"", ""window"": ""examined""}",Sharpe,{:+.2f}
+4,-0.14,backtest_pillar_attribution.csv,"{""run alone"": ""Valuation"", ""window"": ""examined""}",Sharpe,{:+.2f}
+4,+0.39,backtest_pillar_attribution.csv,"{""run alone"": ""Technical"", ""window"": ""examined""}",Sharpe,{:+.2f}
+4,0.66,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Diagnostic (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 0}",Sharpe,{:.2f}
+4,0.63,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Diagnostic (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 5}",Sharpe,{:.2f}
+4,0.60,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Diagnostic (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Sharpe,{:.2f}
+4,0.54,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Diagnostic (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 20}",Sharpe,{:.2f}
+4,0.59,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Diagnostic (4-pillar)"", ""book"": ""long-short top1/bottom1"", ""cost bps"": 10}",Sharpe,{:.2f}
+4,-23.1,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Diagnostic (4-pillar)"", ""book"": ""long-short top1/bottom1"", ""cost bps"": 10}",Max drawdown %,{:.1f}
+5,OVERWEIGHT,current_scorecard.csv,"{""country"": ""US""}",Call (4-pillar diagnostic),{}
+5,OVERWEIGHT,current_scorecard.csv,"{""country"": ""US""}",Call (predictive),{}
+5,1,current_scorecard.csv,"{""country"": ""US""}",Diagnostic rank,{:.0f}
+5,+0.56,current_scorecard.csv,"{""country"": ""US""}",Diagnostic score,{:+.2f}
+5,OVERWEIGHT,current_scorecard.csv,"{""country"": ""Japan""}",Call (4-pillar diagnostic),{}
+5,OVERWEIGHT,current_scorecard.csv,"{""country"": ""Japan""}",Call (predictive),{}
+5,2,current_scorecard.csv,"{""country"": ""Japan""}",Diagnostic rank,{:.0f}
+5,+0.04,current_scorecard.csv,"{""country"": ""Japan""}",Diagnostic score,{:+.2f}
+5,NEUTRAL,current_scorecard.csv,"{""country"": ""Switzerland""}",Call (4-pillar diagnostic),{}
+5,UNDERWEIGHT,current_scorecard.csv,"{""country"": ""Switzerland""}",Call (predictive),{}
+5,3,current_scorecard.csv,"{""country"": ""Switzerland""}",Diagnostic rank,{:.0f}
+5,-0.18,current_scorecard.csv,"{""country"": ""Switzerland""}",Diagnostic score,{:+.2f}
+5,UNDERWEIGHT,current_scorecard.csv,"{""country"": ""UK""}",Call (4-pillar diagnostic),{}
+5,UNDERWEIGHT,current_scorecard.csv,"{""country"": ""UK""}",Call (predictive),{}
+5,4,current_scorecard.csv,"{""country"": ""UK""}",Diagnostic rank,{:.0f}
+5,-0.19,current_scorecard.csv,"{""country"": ""UK""}",Diagnostic score,{:+.2f}
+5,UNDERWEIGHT,current_scorecard.csv,"{""country"": ""Eurozone""}",Call (4-pillar diagnostic),{}
+5,NEUTRAL,current_scorecard.csv,"{""country"": ""Eurozone""}",Call (predictive),{}
+5,5,current_scorecard.csv,"{""country"": ""Eurozone""}",Diagnostic rank,{:.0f}
+5,-0.23,current_scorecard.csv,"{""country"": ""Eurozone""}",Diagnostic score,{:+.2f}
+5,+1.1,current_scorecard.csv,"{""country"": ""US""}",Macro score,{:+.1f}
+5,16.5,current_scorecard.csv,"{""country"": ""US""}",EPS revision 6M %,{:.1f}
+5,20.7,current_scorecard.csv,"{""country"": ""US""}",Forward P/E,{:.1f}
+5,+0.2,current_scorecard.csv,"{""country"": ""Japan""}",Micro score,{:+.1f}
+5,-0.2,current_scorecard.csv,"{""country"": ""Japan""}",Macro score,{:+.1f}
+5,-1.6,current_scorecard.csv,"{""country"": ""UK""}",Macro score,{:+.1f}
+5,3,headline_figures.csv,"{""figure"": ""call agreement (of 5 markets)""}",value,{:.0f}
+5,0.22,headline_figures.csv,"{""figure"": ""gap between diagnostic rank 2 and rank 3""}",value,{:.2f}

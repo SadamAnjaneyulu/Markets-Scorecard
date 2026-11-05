@@ -1,0 +1,6 @@
+,Diagnostic rank (4-pillar),Call (4-pillar diagnostic),Predictive rank (Macro+Micro),Call (predictive),Agree?
+US,1,OVERWEIGHT,1,OVERWEIGHT,yes
+Japan,2,OVERWEIGHT,2,OVERWEIGHT,yes
+Switzerland,3,NEUTRAL,4,UNDERWEIGHT,NO
+UK,4,UNDERWEIGHT,5,UNDERWEIGHT,yes
+Eurozone,5,UNDERWEIGHT,3,NEUTRAL,NO

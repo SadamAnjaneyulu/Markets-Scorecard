@@ -1,0 +1,7 @@
+test,result,reading
+"Raw IC (best candidate: signed trend quality, 6M)","+0.133 full, +0.163 examined, HAC t 2.46",looks like the strongest technical result
+Orthogonalised against Micro + Valuation,IC falls to +0.057 full and +0.039 examined (43% retained),most of the signal is the other two pillars restated
+Leave-one-country-out (US removed),IC falls from +0.133 to +0.007,almost entirely a US effect
+"Every other candidate, ex-US","6M momentum -0.045, 12−1M -0.013, vol-adjusted -0.003",no momentum variant survives without the US
+"Reversal hypotheses (1M, 3M)",full IC -0.014 and -0.013,reversal is not present at country level in this dataset
+Price-series independence,price = P/E × EPS exactly; the EPS leg carries 52% of 6M variance and the P/E leg 48%,a technical pillar cannot be independent of Micro and Valuation here
