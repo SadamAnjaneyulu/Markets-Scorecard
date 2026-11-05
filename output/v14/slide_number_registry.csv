@@ -1,0 +1,113 @@
+slide,displayed,file,filter,column,format
+2,PROVISIONAL,signal_classification.csv,"{""pillar"": ""Macro""}",classification,{}
+2,+0.127,predictive_power.csv,"{""pillar"": ""Macro"", ""horizon"": ""3M"", ""window"": ""validation""}",IC,{:+.3f}
+2,-0.04,predictive_power.csv,"{""pillar"": ""Macro"", ""horizon"": ""3M"", ""window"": ""validation""}",CI 2.5%,{:+.2f}
+2,+0.25,predictive_power.csv,"{""pillar"": ""Macro"", ""horizon"": ""3M"", ""window"": ""validation""}",CI 97.5%,{:+.2f}
+2,+0.173,predictive_power.csv,"{""pillar"": ""Macro"", ""horizon"": ""6M"", ""window"": ""validation""}",IC,{:+.3f}
+2,-0.01,predictive_power.csv,"{""pillar"": ""Macro"", ""horizon"": ""6M"", ""window"": ""validation""}",CI 2.5%,{:+.2f}
+2,+0.34,predictive_power.csv,"{""pillar"": ""Macro"", ""horizon"": ""6M"", ""window"": ""validation""}",CI 97.5%,{:+.2f}
+2,0.015,predictive_power.csv,"{""pillar"": ""Macro"", ""horizon"": ""3M"", ""window"": ""validation""}",perm p,{:.3f}
+2,0.018,predictive_power.csv,"{""pillar"": ""Macro"", ""horizon"": ""6M"", ""window"": ""validation""}",perm p,{:.3f}
+2,PROVISIONAL,signal_classification.csv,"{""pillar"": ""Micro""}",classification,{}
+2,+0.131,predictive_power.csv,"{""pillar"": ""Micro"", ""horizon"": ""3M"", ""window"": ""validation""}",IC,{:+.3f}
+2,-0.03,predictive_power.csv,"{""pillar"": ""Micro"", ""horizon"": ""3M"", ""window"": ""validation""}",CI 2.5%,{:+.2f}
+2,+0.27,predictive_power.csv,"{""pillar"": ""Micro"", ""horizon"": ""3M"", ""window"": ""validation""}",CI 97.5%,{:+.2f}
+2,+0.074,predictive_power.csv,"{""pillar"": ""Micro"", ""horizon"": ""6M"", ""window"": ""validation""}",IC,{:+.3f}
+2,-0.14,predictive_power.csv,"{""pillar"": ""Micro"", ""horizon"": ""6M"", ""window"": ""validation""}",CI 2.5%,{:+.2f}
+2,+0.27,predictive_power.csv,"{""pillar"": ""Micro"", ""horizon"": ""6M"", ""window"": ""validation""}",CI 97.5%,{:+.2f}
+2,0.019,predictive_power.csv,"{""pillar"": ""Micro"", ""horizon"": ""3M"", ""window"": ""validation""}",perm p,{:.3f}
+2,0.195,predictive_power.csv,"{""pillar"": ""Micro"", ""horizon"": ""6M"", ""window"": ""validation""}",perm p,{:.3f}
+2,REJECTED,signal_classification.csv,"{""pillar"": ""Valuation""}",classification,{}
+2,-0.108,predictive_power.csv,"{""pillar"": ""Valuation"", ""horizon"": ""3M"", ""window"": ""validation""}",IC,{:+.3f}
+2,-0.27,predictive_power.csv,"{""pillar"": ""Valuation"", ""horizon"": ""3M"", ""window"": ""validation""}",CI 2.5%,{:+.2f}
+2,-0.00,predictive_power.csv,"{""pillar"": ""Valuation"", ""horizon"": ""3M"", ""window"": ""validation""}",CI 97.5%,{:+.2f}
+2,-0.112,predictive_power.csv,"{""pillar"": ""Valuation"", ""horizon"": ""6M"", ""window"": ""validation""}",IC,{:+.3f}
+2,-0.34,predictive_power.csv,"{""pillar"": ""Valuation"", ""horizon"": ""6M"", ""window"": ""validation""}",CI 2.5%,{:+.2f}
+2,+0.02,predictive_power.csv,"{""pillar"": ""Valuation"", ""horizon"": ""6M"", ""window"": ""validation""}",CI 97.5%,{:+.2f}
+2,0.951,predictive_power.csv,"{""pillar"": ""Valuation"", ""horizon"": ""3M"", ""window"": ""validation""}",perm p,{:.3f}
+2,0.878,predictive_power.csv,"{""pillar"": ""Valuation"", ""horizon"": ""6M"", ""window"": ""validation""}",perm p,{:.3f}
+2,REJECTED,signal_classification.csv,"{""pillar"": ""Technical""}",classification,{}
+2,-0.066,predictive_power.csv,"{""pillar"": ""Technical"", ""horizon"": ""3M"", ""window"": ""validation""}",IC,{:+.3f}
+2,-0.21,predictive_power.csv,"{""pillar"": ""Technical"", ""horizon"": ""3M"", ""window"": ""validation""}",CI 2.5%,{:+.2f}
+2,+0.04,predictive_power.csv,"{""pillar"": ""Technical"", ""horizon"": ""3M"", ""window"": ""validation""}",CI 97.5%,{:+.2f}
+2,-0.029,predictive_power.csv,"{""pillar"": ""Technical"", ""horizon"": ""6M"", ""window"": ""validation""}",IC,{:+.3f}
+2,-0.29,predictive_power.csv,"{""pillar"": ""Technical"", ""horizon"": ""6M"", ""window"": ""validation""}",CI 2.5%,{:+.2f}
+2,+0.16,predictive_power.csv,"{""pillar"": ""Technical"", ""horizon"": ""6M"", ""window"": ""validation""}",CI 97.5%,{:+.2f}
+2,0.850,predictive_power.csv,"{""pillar"": ""Technical"", ""horizon"": ""3M"", ""window"": ""validation""}",perm p,{:.3f}
+2,0.626,predictive_power.csv,"{""pillar"": ""Technical"", ""horizon"": ""6M"", ""window"": ""validation""}",perm p,{:.3f}
+2,+0.19,predictive_power.csv,"{""pillar"": ""Macro"", ""horizon"": ""6M"", ""window"": ""discovery""}",IC,{:+.2f}
+2,+0.17,predictive_power.csv,"{""pillar"": ""Macro"", ""horizon"": ""6M"", ""window"": ""validation""}",IC,{:+.2f}
+2,+0.13,predictive_power.csv,"{""pillar"": ""Micro"", ""horizon"": ""3M"", ""window"": ""validation""}",IC,{:+.2f}
+2,+0.07,predictive_power.csv,"{""pillar"": ""Micro"", ""horizon"": ""6M"", ""window"": ""validation""}",IC,{:+.2f}
+2,+0.17,predictive_power.csv,"{""pillar"": ""Valuation"", ""horizon"": ""3M"", ""window"": ""discovery""}",IC,{:+.2f}
+2,-0.11,predictive_power.csv,"{""pillar"": ""Valuation"", ""horizon"": ""3M"", ""window"": ""validation""}",IC,{:+.2f}
+2,+0.07,predictive_power.csv,"{""pillar"": ""Technical"", ""horizon"": ""3M"", ""window"": ""discovery""}",IC,{:+.2f}
+2,-0.07,predictive_power.csv,"{""pillar"": ""Technical"", ""horizon"": ""3M"", ""window"": ""validation""}",IC,{:+.2f}
+3,+0.22,aggregate_score_ic.csv,"{""score"": ""Aggregate (4-pillar)"", ""horizon"": ""3M"", ""window"": ""discovery""}",IC,{:+.2f}
+3,-0.04,aggregate_score_ic.csv,"{""score"": ""Aggregate (4-pillar)"", ""horizon"": ""3M"", ""window"": ""validation""}",IC,{:+.2f}
+3,+0.31,aggregate_score_ic.csv,"{""score"": ""Aggregate (4-pillar)"", ""horizon"": ""6M"", ""window"": ""discovery""}",IC,{:+.2f}
+3,-0.03,aggregate_score_ic.csv,"{""score"": ""Aggregate (4-pillar)"", ""horizon"": ""6M"", ""window"": ""validation""}",IC,{:+.2f}
+4,8.2,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Scorecard (4-pillar)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Ann. return %,{:.1f}
+4,6.7,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Equal-weight benchmark"", ""book"": ""long-only"", ""cost bps"": 0}",Ann. return %,{:.1f}
+4,2.2,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Scorecard (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Ann. return %,{:.1f}
+4,3.2,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Companion (FCI-only)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Ann. return %,{:.1f}
+4,13.5,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Scorecard (4-pillar)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Ann. vol %,{:.1f}
+4,14.0,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Equal-weight benchmark"", ""book"": ""long-only"", ""cost bps"": 0}",Ann. vol %,{:.1f}
+4,6.7,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Scorecard (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Ann. vol %,{:.1f}
+4,5.4,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Companion (FCI-only)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Ann. vol %,{:.1f}
+4,0.66,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Scorecard (4-pillar)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Sharpe,{:.2f}
+4,0.53,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Equal-weight benchmark"", ""book"": ""long-only"", ""cost bps"": 0}",Sharpe,{:.2f}
+4,0.35,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Scorecard (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Sharpe,{:.2f}
+4,0.62,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Companion (FCI-only)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Sharpe,{:.2f}
+4,-24.8,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Scorecard (4-pillar)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Max drawdown %,{:.1f}
+4,-27.2,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Equal-weight benchmark"", ""book"": ""long-only"", ""cost bps"": 0}",Max drawdown %,{:.1f}
+4,-18.5,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Scorecard (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Max drawdown %,{:.1f}
+4,-12.4,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Companion (FCI-only)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Max drawdown %,{:.1f}
+4,1.7,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Scorecard (4-pillar)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Turnover p.a. (x),{:.1f}
+4,3.6,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Scorecard (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Turnover p.a. (x),{:.1f}
+4,4.8,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Companion (FCI-only)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Turnover p.a. (x),{:.1f}
+4,0.60,backtest_summary.csv,"{""window"": ""validation"", ""strategy"": ""Scorecard (4-pillar)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Sharpe,{:.2f}
+4,0.55,backtest_summary.csv,"{""window"": ""validation"", ""strategy"": ""Equal-weight benchmark"", ""book"": ""long-only"", ""cost bps"": 0}",Sharpe,{:.2f}
+4,-0.02,backtest_summary.csv,"{""window"": ""validation"", ""strategy"": ""Scorecard (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Sharpe,{:.2f}
+4,0.68,backtest_summary.csv,"{""window"": ""validation"", ""strategy"": ""Companion (FCI-only)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Sharpe,{:.2f}
+4,0.37,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Scorecard (4-pillar)"", ""book"": ""long-only top-2"", ""cost bps"": 10}",Information ratio,{:.2f}
+4,0.41,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Scorecard (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 0}",Sharpe,{:.2f}
+4,0.38,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Scorecard (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 5}",Sharpe,{:.2f}
+4,0.35,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Scorecard (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 10}",Sharpe,{:.2f}
+4,0.30,backtest_summary.csv,"{""window"": ""full"", ""strategy"": ""Scorecard (4-pillar)"", ""book"": ""long-short top2/bottom2"", ""cost bps"": 20}",Sharpe,{:.2f}
+4,+0.68,backtest_pillar_attribution.csv,"{""pillar alone"": ""Macro (FCI 6M easing)"", ""window"": ""validation""}",Sharpe,{:+.2f}
+4,+0.35,backtest_pillar_attribution.csv,"{""pillar alone"": ""Micro (EPS revisions 6M)"", ""window"": ""validation""}",Sharpe,{:+.2f}
+4,-0.34,backtest_pillar_attribution.csv,"{""pillar alone"": ""Valuation (P/E relative to peers)"", ""window"": ""validation""}",Sharpe,{:+.2f}
+4,-0.25,backtest_pillar_attribution.csv,"{""pillar alone"": ""Technical (Low realised volatility 12M)"", ""window"": ""validation""}",Sharpe,{:+.2f}
+5,OVERWEIGHT,current_scorecard.csv,"{""country"": ""US""}",Scorecard call,{}
+5,1,current_scorecard.csv,"{""country"": ""US""}",Rank,{:.0f}
+5,+0.25,current_scorecard.csv,"{""country"": ""US""}",Aggregate score,{:+.2f}
+5,1,current_scorecard.csv,"{""country"": ""US""}",Companion FCI-only rank,{:.0f}
+5,OVERWEIGHT,current_scorecard.csv,"{""country"": ""UK""}",Scorecard call,{}
+5,2,current_scorecard.csv,"{""country"": ""UK""}",Rank,{:.0f}
+5,+0.24,current_scorecard.csv,"{""country"": ""UK""}",Aggregate score,{:+.2f}
+5,5,current_scorecard.csv,"{""country"": ""UK""}",Companion FCI-only rank,{:.0f}
+5,NEUTRAL,current_scorecard.csv,"{""country"": ""Eurozone""}",Scorecard call,{}
+5,3,current_scorecard.csv,"{""country"": ""Eurozone""}",Rank,{:.0f}
+5,+0.08,current_scorecard.csv,"{""country"": ""Eurozone""}",Aggregate score,{:+.2f}
+5,3,current_scorecard.csv,"{""country"": ""Eurozone""}",Companion FCI-only rank,{:.0f}
+5,UNDERWEIGHT,current_scorecard.csv,"{""country"": ""Switzerland""}",Scorecard call,{}
+5,4,current_scorecard.csv,"{""country"": ""Switzerland""}",Rank,{:.0f}
+5,-0.18,current_scorecard.csv,"{""country"": ""Switzerland""}",Aggregate score,{:+.2f}
+5,2,current_scorecard.csv,"{""country"": ""Switzerland""}",Companion FCI-only rank,{:.0f}
+5,UNDERWEIGHT,current_scorecard.csv,"{""country"": ""Japan""}",Scorecard call,{}
+5,5,current_scorecard.csv,"{""country"": ""Japan""}",Rank,{:.0f}
+5,-0.39,current_scorecard.csv,"{""country"": ""Japan""}",Aggregate score,{:+.2f}
+5,4,current_scorecard.csv,"{""country"": ""Japan""}",Companion FCI-only rank,{:.0f}
+5,+1.1,current_scorecard.csv,"{""country"": ""US""}",Macro score,{:+.1f}
+5,16.5,current_scorecard.csv,"{""country"": ""US""}",EPS revision 6M %,{:.1f}
+5,20.7,current_scorecard.csv,"{""country"": ""US""}",Forward P/E,{:.1f}
+5,+1.3,current_scorecard.csv,"{""country"": ""UK""}",Valuation score,{:+.1f}
+5,+0.9,current_scorecard.csv,"{""country"": ""UK""}",Technical score,{:+.1f}
+5,-1.6,current_scorecard.csv,"{""country"": ""UK""}",Macro score,{:+.1f}
+5,+1.4,current_scorecard.csv,"{""country"": ""Switzerland""}",EPS revision 6M %,{:+.1f}
+5,18.8,current_scorecard.csv,"{""country"": ""Japan""}",12M realised vol % (ann.),{:.1f}
+5,+0.25,current_scorecard.csv,"{""country"": ""US""}",Aggregate score,{:+.2f}
+5,+0.24,current_scorecard.csv,"{""country"": ""UK""}",Aggregate score,{:+.2f}
+5,4,scorecard_history.csv,"{""month"": ""2026-03"", ""country"": ""US""}",rank,{:.0f}
+5,2,current_scorecard.csv,"{""country"": ""Switzerland""}",Companion FCI-only rank,{:.0f}

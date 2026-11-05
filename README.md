@@ -229,3 +229,31 @@ Report: `output/v13/PERFORMANCE_REPORT.md`. The experiment grid and decision rul
 - **Signal variants:** none passes the pre-registered rule.
 - **Walk-forward selection** of the best construction: 0.22.
 - **Data:** external total-return data is blocked by the network policy. The supplied "price" file is P/E, and its EZ column is mislabelled MXEM.
+
+## v14 — FINAL SUBMISSION (follows the CRISIL brief)
+- **Checklist:** `ASSIGNMENT_CHECKLIST.md`
+- **Notebook:** `notebook/Markets_Scorecard_v14_FINAL.ipynb` (end to end)
+- **Outputs:** `output/v14/` (CSV input and output, charts, `METHODOLOGY_AND_LIMITATIONS.md`)
+- **Deck:** `slides/Markets_Scorecard_FINAL.pptx` (5 slides). Built by `slides/build_final_ppt.py`; numbers checked by `slides/check_ppt_reconciliation.py`.
+
+**Approach**
+- The four-pillar equal-weight scorecard is the primary product: FCI 6M easing, EPS revisions 6M, P/E vs peers, low realised volatility 12M.
+- An FCI-only companion model is reported separately.
+- Classification: Macro and Micro PROVISIONAL; Valuation and Technical REJECTED. No significance is claimed.
+
+**Results**
+- **Long-only:** the scorecard beats equal weight (full Sharpe 0.66 vs 0.53, net of 10 bps).
+- **Long-short:** the edge disappears in validation (Sharpe −0.02). Attribution shows the rejected pillars are responsible.
+- **Ranking as of 30-Apr-2026:** overweight US and UK, underweight Switzerland and Japan; low conviction. The data cannot be updated comparably (proprietary Bloomberg inputs; network blocked). Re-exporting the same tickers refreshes everything.
+
+**Correction to v13:** the brief's own data table lists `MXEM Index` as the Eurozone price ticker. The v13 report's "label error" remark referred to the brief's specification, not to a file defect.
+
+**To reproduce:** run the notebook, then:
+
+```bash
+python3 slides/build_final_ppt.py
+```
+
+```bash
+python3 slides/check_ppt_reconciliation.py
+```

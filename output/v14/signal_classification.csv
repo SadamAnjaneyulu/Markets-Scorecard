@@ -1,0 +1,5 @@
+,indicator,validation IC 3M,validation IC 6M,perm p 3M,perm p 6M,classification,interpretation
+Macro,FCI 6M easing,0.1271844660194175,0.17300000000000001,0.014997000599880024,0.01779644071185763,PROVISIONAL,"Positive in both windows and both horizons; the strongest pillar, but not significant after selection. 3M result depends on the US; 6M does not."
+Micro,EPS revisions 6M,0.1310679611650486,0.07400000000000001,0.019396120775844832,0.1947610477904419,PROVISIONAL,"Positive at 3M, weak at 6M. About half of the 3M IC is a persistent tilt toward the US and Japan rather than timing (v11)."
+Valuation,P/E relative to peers,-0.10776699029126213,-0.11200000000000002,0.9506098780243951,0.877624475104979,REJECTED,"Positive in discovery, negative in validation. Cheap markets stayed cheap: the earnings leg offset any re-rating."
+Technical,Low realised volatility 12M,-0.06601941747572813,-0.02900000000000001,0.8498300339932013,0.6256748650269947,REJECTED,"Positive in discovery, negative in validation. Not explained by market direction; no country-level mechanism identified."
