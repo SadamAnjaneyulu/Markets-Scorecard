@@ -1,0 +1,20 @@
+{
+  "head_at_start": "e5e94ad",
+  "common_sample": [
+    "2009-12",
+    "2026-04"
+  ],
+  "discovery": [
+    "2009-12",
+    "2016-12"
+  ],
+  "validation": [
+    "2017-07",
+    "2026-04"
+  ],
+  "n_months": 181,
+  "bootstrap": 5000,
+  "permutations": 2000,
+  "p_value_convention": "add-one Monte Carlo (1+k)/(1+N)",
+  "multiplicity_scope": "conditional - covers the 5 signals tested in v9 only, not the v1-v7 search history"
+}

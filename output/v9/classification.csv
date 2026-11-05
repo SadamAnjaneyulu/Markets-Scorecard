@@ -1,0 +1,6 @@
+signal,pillar,classification,criteria met,reason,A positive both windows,B validation t >= 1,C full boot CI excl 0,D >=4/6 offsets,E beats best-of-5 null,F adds incrementally,G independent (>=50% IC)
+MACRO_fci6,Macro,PROVISIONAL,5/7,"directionally consistent, statistically inconclusive",True,True,False,True,True,False,True
+MICRO_eps6,Micro,PROVISIONAL,4/7,"directionally consistent, statistically inconclusive",True,True,True,True,False,False,False
+VAL_v3,Valuation,REJECTED,3/7,unstable across non-overlapping offsets,True,True,False,False,False,False,True
+TECH_t3,Technical,REJECTED,3/7,redundant with MICRO_eps6 (stronger standalone evidence in the same cluster),True,True,False,True,False,False,False
+TECH_mom3,Technical (alt),REJECTED,3/7,redundant with MICRO_eps6 (stronger standalone evidence in the same cluster),True,True,False,True,False,False,False
