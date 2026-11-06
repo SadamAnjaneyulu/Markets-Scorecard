@@ -1,0 +1,7 @@
+check,value
+"Full-sample IC, 6M",0.13152709359605916
+Median monthly IC,0.10000000000000003
+IC after dropping the six worst months,0.1629441624365482
+IC after dropping the six best months,0.10710659898477154
+IC in months with no negative 2Y yield (34 months),0.10588235294117647
+IC in months when some market has a negative 2Y yield (169 months),0.1366863905325444

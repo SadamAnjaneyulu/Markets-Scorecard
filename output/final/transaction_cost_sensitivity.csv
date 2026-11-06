@@ -1,0 +1,73 @@
+model,book,cost_bps,sharpe,return_pct_pa
+Original: FCI + EPS revision 6M,long_only,0,0.7180002091722383,9.375514251831053
+Original: FCI + EPS revision 6M,long_only,5,0.7106912128603526,9.263642701312191
+Original: FCI + EPS revision 6M,long_only,10,0.7033777290811565,9.151872175660625
+Original: FCI + EPS revision 6M,long_only,20,0.6887374538596415,8.928633878391178
+Original: FCI + EPS revision 6M,long_only,30,0.6740796942521606,8.705798719435576
+Original: FCI + EPS revision 6M,long_only,50,0.6447129748592856,8.261335258504165
+Original: FCI + EPS revision 6M,long_short,0,0.6190019643535962,3.895118304920042
+Original: FCI + EPS revision 6M,long_short,5,0.5856732892514828,3.6710637821892877
+Original: FCI + EPS revision 6M,long_short,10,0.5523450353802203,3.447438816985815
+Original: FCI + EPS revision 6M,long_short,20,0.48570217242460617,3.001474638337265
+Original: FCI + EPS revision 6M,long_short,30,0.4190980621336748,2.557219938167843
+Original: FCI + EPS revision 6M,long_short,50,0.28610404059128086,1.673815736560269
+Macro only: FCI 6M,long_only,0,0.7137259272250208,9.594067156671882
+Macro only: FCI 6M,long_only,5,0.7056641569493391,9.465929628941971
+Macro only: FCI 6M,long_only,10,0.6975962032523754,9.337925186438767
+Macro only: FCI 6M,long_only,20,0.6814419080585117,9.082315069655555
+Macro only: FCI 6M,long_only,30,0.6652633683947485,8.827235832378634
+Macro only: FCI 6M,long_only,50,0.6328348771378207,8.31866610832015
+Macro only: FCI 6M,long_short,0,0.843363768223445,4.609594927025951
+Macro only: FCI 6M,long_short,5,0.7991143572306101,4.355811298736323
+Macro only: FCI 6M,long_short,10,0.7548545997492747,4.102578339449847
+Macro only: FCI 6M,long_short,20,0.6663276342188653,3.5977601773390155
+Macro only: FCI 6M,long_short,30,0.5778299283965836,3.095131957606889
+Macro only: FCI 6M,long_short,50,0.4011090030035726,2.0964115566147745
+Micro only: EPS persistence 12M,long_only,0,0.7557683919896855,9.434247892965008
+Micro only: EPS persistence 12M,long_only,5,0.7507959327202943,9.363033824456778
+Micro only: EPS persistence 12M,long_only,10,0.745822314204697,9.291860596017166
+Micro only: EPS persistence 12M,long_only,20,0.7358716515210694,9.149636577799726
+Micro only: EPS persistence 12M,long_only,30,0.7259165082399617,9.00757567531214
+Micro only: EPS persistence 12M,long_only,50,0.7059931980958559,8.72394256622131
+Micro only: EPS persistence 12M,long_short,0,0.5732747298828459,4.104191614260699
+Micro only: EPS persistence 12M,long_short,5,0.5550017121124505,3.9619310179344502
+Micro only: EPS persistence 12M,long_short,10,0.5367271316857458,3.8198449408181068
+Micro only: EPS persistence 12M,long_short,20,0.5001746831085305,3.5361955825903735
+Micro only: EPS persistence 12M,long_short,30,0.46362018386784015,3.2532420181553556
+Micro only: EPS persistence 12M,long_short,50,0.390516221267501,2.6894161995731913
+Revised: FCI + EPS persistence,long_only,0,0.7443295881471316,10.139337948357108
+Revised: FCI + EPS persistence,long_only,5,0.7382752563528263,10.042100853102397
+Revised: FCI + EPS persistence,long_only,10,0.7322172422656235,9.944938518721958
+Revised: FCI + EPS persistence,long_only,20,0.7200902889711743,9.750837933005707
+Revised: FCI + EPS persistence,long_only,30,0.7079489727326902,9.55703579233358
+Revised: FCI + EPS persistence,long_only,50,0.6836242368113061,9.170325252874555
+Revised: FCI + EPS persistence,long_short,0,0.7612266414503585,5.191825703274966
+Revised: FCI + EPS persistence,long_short,5,0.7350986153282929,4.996215002298698
+Revised: FCI + EPS persistence,long_short,10,0.708903062707712,4.800925905658904
+Revised: FCI + EPS persistence,long_short,20,0.6563159181021008,4.411310653820011
+Revised: FCI + EPS persistence,long_short,30,0.6034785210995508,4.02297621052321
+Revised: FCI + EPS persistence,long_short,50,0.4971080255292293,3.2501348477403713
+Ridge challenger (4 pillars),long_only,0,0.6130925703511588,7.858559036427715
+Ridge challenger (4 pillars),long_only,5,0.607682358479972,7.778415135862415
+Ridge challenger (4 pillars),long_only,10,0.6022721733893721,7.698321131168462
+Ridge challenger (4 pillars),long_only,20,0.5914520260028419,7.538282701698984
+Ridge challenger (4 pillars),long_only,30,0.5806324128073631,7.3784435327398645
+Ridge challenger (4 pillars),long_only,50,0.5589959249695949,7.059362116129941
+Ridge challenger (4 pillars),long_short,0,0.4112113922094419,2.479586355520147
+Ridge challenger (4 pillars),long_short,5,0.387993754365768,2.327184816493566
+Ridge challenger (4 pillars),long_short,10,0.3647878576092139,2.1749778986732693
+Ridge challenger (4 pillars),long_short,20,0.31841963540496077,1.8711470391188367
+Ridge challenger (4 pillars),long_short,30,0.2721233117645439,1.5680920038505075
+Ridge challenger (4 pillars),long_short,50,0.1798116993976632,0.9643023305900611
+Diagnostic scorecard (four pillars),long_only,0,0.7154224533412561,9.463540216004862
+Diagnostic scorecard (four pillars),long_only,5,0.7095582090181599,9.37221061867135
+Diagnostic scorecard (four pillars),long_only,10,0.7036904052862358,9.280947007533102
+Diagnostic scorecard (four pillars),long_only,20,0.6919442434869452,9.098617578985802
+Diagnostic scorecard (four pillars),long_only,30,0.6801842166790554,8.91655160086524
+Diagnostic scorecard (four pillars),long_only,50,0.6566235704999928,8.553208679635539
+Diagnostic scorecard (four pillars),long_short,0,0.5734648812681463,3.7653114117897513
+Diagnostic scorecard (four pillars),long_short,5,0.5481861188870114,3.5844296411799315
+Diagnostic scorecard (four pillars),long_short,10,0.5228716902151025,3.4038256593236005
+Diagnostic scorecard (four pillars),long_short,20,0.4721427925294007,3.043449549421373
+Diagnostic scorecard (four pillars),long_short,30,0.4212922188202769,2.6841800616238976
+Diagnostic scorecard (four pillars),long_short,50,0.3192829883702042,1.968948905964396

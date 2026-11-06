@@ -1,0 +1,5 @@
+pillar,indicator,label,IC_examined_3M,IC_examined_6M,min_leave_one_out_6M,weight_in_diagnostic_score,weight_in_predictive_score
+Macro,"Financial conditions impulse, 6 months",PREDICTIVE (provisional),0.15825242718446603,0.15000000000000002,0.100507614213198,0.25,0.5
+Micro,"Earnings revision persistence, 12 months",PREDICTIVE (provisional),0.19142235704636712,0.2001538814283466,0.10945803534631095,0.25,0.5
+Valuation,Earnings yield spread versus own history,DIAGNOSTIC,-0.06310679611650484,-0.04400000000000002,0.07684729064039411,0.25,0.0
+Technical,"Signed trend quality, 12 months",DIAGNOSTIC,0.1485436893203884,0.14,-0.0026431718061673956,0.25,0.0

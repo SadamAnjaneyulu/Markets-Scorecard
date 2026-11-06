@@ -1,0 +1,47 @@
+market,field,meaning,units,family,frequency,first_month,last_month,n_months,internal_gaps,distinct_values,share_months_unchanged,publication_timing
+US,BEst P/E Ratio,Consensus 12-month forward price/earnings ratio,ratio,Valuation,Monthly (last observation in month),2005-01,2026-04,256,0,256,0.0,Live consensus; vintage not verifiable from the workbook
+US,Monthly_EPS,12-month forward consensus earnings per share (US field),index points,Earnings,Monthly (last observation in month),2005-01,2026-04,256,0,256,0.0,Live consensus; vintage not verifiable from the workbook
+US,DXY Index,Trade-weighted US dollar index,index,FX,Monthly (last observation in month),2005-01,2026-04,256,0,255,0.0,"Market data, available same day"
+US,LF98OAS Index,US high-yield corporate option-adjusted spread,%,Credit,Monthly (last observation in month),2005-01,2026-04,256,0,202,0.0,"Market data, available same day"
+US,CO1 Comdty,Brent crude front-month — a single global series,USD/barrel,Commodity,Monthly (last observation in month),2005-01,2026-04,256,0,251,0.0,"Market data, available same day"
+US,VIX Index,US equity implied volatility — a single global series,index,Volatility,Monthly (last observation in month),2005-01,2026-04,256,0,242,0.0,"Market data, available same day"
+US,USGGT02Y Index,US 2-year government yield,% p.a.,Rates,Monthly (last observation in month),2005-01,2026-04,256,0,254,0.0,"Market data, available same day"
+US,NAPMPMI Index,US manufacturing PMI,"diffusion index, 50 = unchanged",Activity,Monthly (last observation in month),2005-01,2026-04,256,0,130,0.023,Released early in the following month; a 1-month lag applies
+US,GSFCI Index,"US financial conditions index, higher = tighter","index, 100 = neutral",Financial conditions,Monthly (last observation in month),2005-01,2026-04,256,0,165,0.012,"Daily market data, available same day"
+Eurozone,BEst P/E Ratio,Consensus 12-month forward price/earnings ratio,ratio,Valuation,Monthly (last observation in month),2005-12,2026-06,247,0,246,0.0,Live consensus; vintage not verifiable from the workbook
+Eurozone,BEst EPS,12-month forward consensus earnings per share,local index points,Earnings,Monthly (last observation in month),2005-12,2026-06,247,0,245,0.004,Live consensus; vintage not verifiable from the workbook
+Eurozone,EURUSD BGN Curncy,US dollars per euro,rate,FX,Monthly (last observation in month),1996-07,2026-06,360,0,348,0.0,"Market data, available same day"
+Eurozone,MPMIEZMA Index,Eurozone manufacturing PMI,diffusion index,Activity,Monthly (last observation in month),1997-06,2026-06,349,0,138,0.284,Released early in the following month; a 1-month lag applies
+Eurozone,GDBR2 Index,German 2-year government yield,% p.a.,Rates,Monthly (last observation in month),1996-07,2026-06,360,0,339,0.003,"Market data, available same day"
+Eurozone,V2X Index,Euro-area equity implied volatility,index,Volatility,Monthly (last observation in month),1999-01,2026-06,330,0,328,0.0,"Market data, available same day"
+Eurozone,BFCIEU Index,"Euro-area financial conditions index, higher = easier",z-score vs own history,Financial conditions,Monthly (last observation in month),1996-07,2026-06,360,0,343,0.0,"Daily market data, available same day"
+Eurozone,LECPOAS Index,Euro investment-grade corporate option-adjusted spread,%,Credit,Monthly (last observation in month),1998-06,2026-06,315,22,158,0.057,"Market data, available same day"
+Eurozone,CO1 Comdty,Brent crude front-month — a single global series,USD/barrel,Commodity,Monthly (last observation in month),1996-07,2026-06,360,0,351,0.0,"Market data, available same day"
+UK,BEst P/E Ratio,Consensus 12-month forward price/earnings ratio,ratio,Valuation,Monthly (last observation in month),2005-12,2026-07,248,0,247,0.0,Live consensus; vintage not verifiable from the workbook
+UK,BEst EPS,12-month forward consensus earnings per share,local index points,Earnings,Monthly (last observation in month),2005-12,2026-07,248,0,248,0.0,Live consensus; vintage not verifiable from the workbook
+UK,GBPUSD BGN Curncy,US dollars per pound,rate,FX,Monthly (last observation in month),1996-07,2026-07,361,0,355,0.0,"Market data, available same day"
+UK,CO1 Comdty,Brent crude front-month — a single global series,USD/barrel,Commodity,Monthly (last observation in month),1996-07,2026-07,361,0,352,0.0,"Market data, available same day"
+UK,MPMIGBMA Index,UK manufacturing PMI,diffusion index,Activity,Monthly (last observation in month),1996-07,2026-07,361,0,130,0.283,Released early in the following month; a 1-month lag applies
+UK,VIX Index,US equity implied volatility — a single global series,index,Volatility,Monthly (last observation in month),2005-01,2026-07,259,0,222,0.004,"Market data, available same day"
+UK,LC61OAS Index,Sterling investment-grade corporate option-adjusted spread,%,Credit,Monthly (last observation in month),2000-08,2026-07,312,0,157,0.058,"Market data, available same day"
+UK,GSGBFCI Index,"UK financial conditions index, higher = tighter","index, 100 = neutral",Financial conditions,Monthly (last observation in month),1996-07,2026-07,361,0,258,0.014,"Daily market data, available same day"
+UK,GUKG2 Index,UK 2-year government yield,% p.a.,Rates,Monthly (last observation in month),1996-07,2026-07,361,0,346,0.006,"Market data, available same day"
+Switzerland,BEst P/E Ratio,Consensus 12-month forward price/earnings ratio,ratio,Valuation,Monthly (last observation in month),2005-12,2026-07,248,0,248,0.0,Live consensus; vintage not verifiable from the workbook
+Switzerland,BEst EPS,12-month forward consensus earnings per share,local index points,Earnings,Monthly (last observation in month),2005-12,2026-07,248,0,248,0.0,Live consensus; vintage not verifiable from the workbook
+Switzerland,VIX Index,US equity implied volatility — a single global series,index,Volatility,Monthly (last observation in month),2005-12,2026-07,248,0,236,0.0,"Market data, available same day"
+Switzerland,LECPOAS Index,Euro investment-grade corporate option-adjusted spread,%,Credit,Monthly (last observation in month),2005-12,2026-07,248,0,140,0.048,"Market data, available same day"
+Switzerland,GSEAFCI Index,"Euro-area financial conditions index, higher = tighter","index, 100 = neutral",Financial conditions,Monthly (last observation in month),2005-12,2026-07,248,0,150,0.02,"Daily market data, available same day"
+Switzerland,CH_PMI,Switzerland manufacturing PMI,diffusion index,Activity,Monthly (last observation in month),2005-12,2026-07,248,0,135,0.278,Released early in the following month; a 1-month lag applies
+Switzerland,USDCHF Curncy,Swiss francs per US dollar,rate,FX,Monthly (last observation in month),2005-12,2026-07,248,0,241,0.0,"Market data, available same day"
+Switzerland,EURCHF Curncy,Swiss francs per euro,rate,FX,Monthly (last observation in month),2005-12,2026-07,248,0,248,0.0,"Market data, available same day"
+Switzerland,CO1 Comdty,Brent crude front-month — a single global series,USD/barrel,Commodity,Monthly (last observation in month),2005-12,2026-07,248,0,244,0.0,"Market data, available same day"
+Switzerland,GSWISS02 Index,Swiss 2-year government yield,% p.a.,Rates,Monthly (last observation in month),2005-12,2026-07,248,0,236,0.0,"Market data, available same day"
+Japan,BEst P/E Ratio,Consensus 12-month forward price/earnings ratio,ratio,Valuation,Monthly (last observation in month),2005-06,2026-06,253,0,253,0.0,Live consensus; vintage not verifiable from the workbook
+Japan,BEst EPS,12-month forward consensus earnings per share,local index points,Earnings,Monthly (last observation in month),2005-06,2026-06,253,0,253,0.0,Live consensus; vintage not verifiable from the workbook
+Japan,USDJPY BGN Curncy,Yen per US dollar,rate,FX,Monthly (last observation in month),2005-06,2026-06,253,0,248,0.0,"Market data, available same day"
+Japan,GSJPFCI Index,"Japan financial conditions index, higher = tighter","index, 100 = neutral",Financial conditions,Monthly (last observation in month),2005-06,2026-06,253,0,199,0.016,"Daily market data, available same day"
+Japan,GJGB2 Index,Japan 2-year government yield,% p.a.,Rates,Monthly (last observation in month),2005-06,2026-06,253,0,215,0.016,"Market data, available same day"
+Japan,CL1 Comdty (YEN),WTI crude front-month priced in yen,JPY/barrel,Commodity,Monthly (last observation in month),2005-06,2026-06,253,0,253,0.0,"Market data, available same day"
+Japan,LJC1OAS Index,Yen investment-grade corporate option-adjusted spread,%,Credit,Monthly (last observation in month),2005-06,2026-06,253,0,65,0.225,"Market data, available same day"
+Japan,VIX Index,US equity implied volatility — a single global series,index,Volatility,Monthly (last observation in month),2005-06,2026-06,253,0,239,0.0,"Market data, available same day"
+Japan,JPYPMI,Japan manufacturing PMI,diffusion index,Activity,Monthly (last observation in month),2005-06,2026-06,253,0,91,0.289,Released early in the following month; a 1-month lag applies

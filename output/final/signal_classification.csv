@@ -1,0 +1,5 @@
+,indicator,label,basis
+Macro,Financial conditions impulse 6M,PREDICTIVE (provisional),Positive in both windows at both horizons and positive with any single market removed. Retains about half of its six-month information coefficient once the other pillars are removed.
+Micro,Earnings revision persistence 12M,PREDICTIVE (provisional),"Positive in both windows at both horizons, stronger out of sample than in discovery, and positive with any single market removed. Replaces the 6-month revision signal. Largely overlaps with the Technical pillar, which is built on the same earnings series."
+Valuation,Earnings yield spread versus own history,DIAGNOSTIC,"Strong in discovery, negative out of sample. The failure is concentrated in the US. Still ranks multiple expansion, but the earnings leg offsets it."
+Technical,Signed trend quality 12M,DIAGNOSTIC,"Removing the Micro and Valuation content takes away a third to a half of its information coefficient, and the rest vanishes without the US. Built on reconstructed prices, so it cannot be independent."

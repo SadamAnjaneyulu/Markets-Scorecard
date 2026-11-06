@@ -1,0 +1,127 @@
+slide,displayed,file,filter,column,format
+1,PREDICTIVE (provisional),signal_classification.csv,"{""pillar"": ""Macro""}",label,{}
+1,"Financial conditions impulse, 6 months",signal_definitions.csv,"{""pillar"": ""Macro""}",indicator,{}
+1,PREDICTIVE (provisional),signal_classification.csv,"{""pillar"": ""Micro""}",label,{}
+1,"Earnings revision persistence, 12 months",signal_definitions.csv,"{""pillar"": ""Micro""}",indicator,{}
+1,DIAGNOSTIC,signal_classification.csv,"{""pillar"": ""Valuation""}",label,{}
+1,Earnings yield spread versus own history,signal_definitions.csv,"{""pillar"": ""Valuation""}",indicator,{}
+1,DIAGNOSTIC,signal_classification.csv,"{""pillar"": ""Technical""}",label,{}
+1,"Signed trend quality, 12 months",signal_definitions.csv,"{""pillar"": ""Technical""}",indicator,{}
+2,PREDICTIVE (provisional),signal_classification.csv,"{""pillar"": ""Macro""}",label,{}
+2,"Financial conditions impulse, 6 months",signal_definitions.csv,"{""pillar"": ""Macro""}",indicator,{}
+2,+0.076,predictive_power.csv,"{""pillar"": ""Macro"", ""horizon"": ""3M"", ""window"": ""discovery""}",IC,{:+.3f}
+2,+0.158,predictive_power.csv,"{""pillar"": ""Macro"", ""horizon"": ""3M"", ""window"": ""examined""}",IC,{:+.3f}
+2,+0.175,predictive_power.csv,"{""pillar"": ""Macro"", ""horizon"": ""6M"", ""window"": ""discovery""}",IC,{:+.3f}
+2,+0.150,predictive_power.csv,"{""pillar"": ""Macro"", ""horizon"": ""6M"", ""window"": ""examined""}",IC,{:+.3f}
+2,PREDICTIVE (provisional),signal_classification.csv,"{""pillar"": ""Micro""}",label,{}
+2,"Earnings revision persistence, 12 months",signal_definitions.csv,"{""pillar"": ""Micro""}",indicator,{}
+2,+0.129,predictive_power.csv,"{""pillar"": ""Micro"", ""horizon"": ""3M"", ""window"": ""discovery""}",IC,{:+.3f}
+2,+0.191,predictive_power.csv,"{""pillar"": ""Micro"", ""horizon"": ""3M"", ""window"": ""examined""}",IC,{:+.3f}
+2,+0.174,predictive_power.csv,"{""pillar"": ""Micro"", ""horizon"": ""6M"", ""window"": ""discovery""}",IC,{:+.3f}
+2,+0.200,predictive_power.csv,"{""pillar"": ""Micro"", ""horizon"": ""6M"", ""window"": ""examined""}",IC,{:+.3f}
+2,DIAGNOSTIC,signal_classification.csv,"{""pillar"": ""Valuation""}",label,{}
+2,Earnings yield spread versus own history,signal_definitions.csv,"{""pillar"": ""Valuation""}",indicator,{}
+2,+0.171,predictive_power.csv,"{""pillar"": ""Valuation"", ""horizon"": ""3M"", ""window"": ""discovery""}",IC,{:+.3f}
+2,-0.063,predictive_power.csv,"{""pillar"": ""Valuation"", ""horizon"": ""3M"", ""window"": ""examined""}",IC,{:+.3f}
+2,+0.295,predictive_power.csv,"{""pillar"": ""Valuation"", ""horizon"": ""6M"", ""window"": ""discovery""}",IC,{:+.3f}
+2,-0.044,predictive_power.csv,"{""pillar"": ""Valuation"", ""horizon"": ""6M"", ""window"": ""examined""}",IC,{:+.3f}
+2,DIAGNOSTIC,signal_classification.csv,"{""pillar"": ""Technical""}",label,{}
+2,"Signed trend quality, 12 months",signal_definitions.csv,"{""pillar"": ""Technical""}",indicator,{}
+2,+0.035,predictive_power.csv,"{""pillar"": ""Technical"", ""horizon"": ""3M"", ""window"": ""discovery""}",IC,{:+.3f}
+2,+0.149,predictive_power.csv,"{""pillar"": ""Technical"", ""horizon"": ""3M"", ""window"": ""examined""}",IC,{:+.3f}
+2,+0.137,predictive_power.csv,"{""pillar"": ""Technical"", ""horizon"": ""6M"", ""window"": ""discovery""}",IC,{:+.3f}
+2,+0.140,predictive_power.csv,"{""pillar"": ""Technical"", ""horizon"": ""6M"", ""window"": ""examined""}",IC,{:+.3f}
+2,97,signal_comparison.csv,"{""horizon"": 6, ""target"": ""USD"", ""model"": ""EPS revision 6M only""}",months,{:.0f}
+2,+0.042,signal_comparison.csv,"{""horizon"": 6, ""target"": ""USD"", ""model"": ""EPS revision 6M only""}",IC,{:+.3f}
+2,+0.200,signal_comparison.csv,"{""horizon"": 6, ""target"": ""USD"", ""model"": ""EPS positive-month share 12M""}",IC,{:+.3f}
+2,+0.268,signal_comparison.csv,"{""horizon"": 6, ""target"": ""USD"", ""model"": ""EPS up-month EWMA12""}",IC,{:+.3f}
+2,+0.082,presentation_figures.json,"{""key_path"": ""valuation_ex_us_examined""}",,{:+.3f}
+2,68%,technical_diagnostic.csv,"{""horizon"": ""6M""}",share_retained,{:.0%}
+2,-0.003,robustness_summary.csv,"{""pillar"": ""Technical"", ""horizon"": ""6M""}",ex_US,{:+.3f}
+3,+0.204,scorecard_ic.csv,"{""score"": ""Diagnostic (four pillars)"", ""horizon"": ""3M"", ""window"": ""discovery""}",IC,{:+.3f}
+3,+0.095,scorecard_ic.csv,"{""score"": ""Diagnostic (four pillars)"", ""horizon"": ""3M"", ""window"": ""examined""}",IC,{:+.3f}
+3,+0.333,scorecard_ic.csv,"{""score"": ""Diagnostic (four pillars)"", ""horizon"": ""6M"", ""window"": ""discovery""}",IC,{:+.3f}
+3,+0.113,scorecard_ic.csv,"{""score"": ""Diagnostic (four pillars)"", ""horizon"": ""6M"", ""window"": ""examined""}",IC,{:+.3f}
+3,+0.163,scorecard_ic.csv,"{""score"": ""Predictive (Macro + Micro)"", ""horizon"": ""3M"", ""window"": ""discovery""}",IC,{:+.3f}
+3,+0.195,scorecard_ic.csv,"{""score"": ""Predictive (Macro + Micro)"", ""horizon"": ""3M"", ""window"": ""examined""}",IC,{:+.3f}
+3,+0.278,scorecard_ic.csv,"{""score"": ""Predictive (Macro + Micro)"", ""horizon"": ""6M"", ""window"": ""discovery""}",IC,{:+.3f}
+3,+0.219,scorecard_ic.csv,"{""score"": ""Predictive (Macro + Micro)"", ""horizon"": ""6M"", ""window"": ""examined""}",IC,{:+.3f}
+4,9.9,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Revised: FCI + EPS persistence"", ""book"": ""long_only"", ""cost_bps"": 10}",return_pct_pa,{:.1f}
+4,9.2,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Original: FCI + EPS revision 6M"", ""book"": ""long_only"", ""cost_bps"": 10}",return_pct_pa,{:.1f}
+4,7.2,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Equal-weight benchmark"", ""book"": ""long_only"", ""cost_bps"": 0}",return_pct_pa,{:.1f}
+4,4.8,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Revised: FCI + EPS persistence"", ""book"": ""long_short"", ""cost_bps"": 10}",return_pct_pa,{:.1f}
+4,14.4,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Revised: FCI + EPS persistence"", ""book"": ""long_only"", ""cost_bps"": 10}",volatility_pct_pa,{:.1f}
+4,13.9,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Original: FCI + EPS revision 6M"", ""book"": ""long_only"", ""cost_bps"": 10}",volatility_pct_pa,{:.1f}
+4,14.3,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Equal-weight benchmark"", ""book"": ""long_only"", ""cost_bps"": 0}",volatility_pct_pa,{:.1f}
+4,7.0,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Revised: FCI + EPS persistence"", ""book"": ""long_short"", ""cost_bps"": 10}",volatility_pct_pa,{:.1f}
+4,0.73,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Revised: FCI + EPS persistence"", ""book"": ""long_only"", ""cost_bps"": 10}",sharpe,{:.2f}
+4,0.70,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Original: FCI + EPS revision 6M"", ""book"": ""long_only"", ""cost_bps"": 10}",sharpe,{:.2f}
+4,0.56,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Equal-weight benchmark"", ""book"": ""long_only"", ""cost_bps"": 0}",sharpe,{:.2f}
+4,0.71,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Revised: FCI + EPS persistence"", ""book"": ""long_short"", ""cost_bps"": 10}",sharpe,{:.2f}
+4,-28.5,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Revised: FCI + EPS persistence"", ""book"": ""long_only"", ""cost_bps"": 10}",max_drawdown_pct,{:.1f}
+4,-27.4,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Original: FCI + EPS revision 6M"", ""book"": ""long_only"", ""cost_bps"": 10}",max_drawdown_pct,{:.1f}
+4,-27.2,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Equal-weight benchmark"", ""book"": ""long_only"", ""cost_bps"": 0}",max_drawdown_pct,{:.1f}
+4,-15.5,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Revised: FCI + EPS persistence"", ""book"": ""long_short"", ""cost_bps"": 10}",max_drawdown_pct,{:.1f}
+4,1.8x,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Revised: FCI + EPS persistence"", ""book"": ""long_only"", ""cost_bps"": 10}",turnover_pa,{:.1f}x
+4,2.1x,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Original: FCI + EPS revision 6M"", ""book"": ""long_only"", ""cost_bps"": 10}",turnover_pa,{:.1f}x
+4,3.7x,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Revised: FCI + EPS persistence"", ""book"": ""long_short"", ""cost_bps"": 10}",turnover_pa,{:.1f}x
+4,0.59,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Revised: FCI + EPS persistence"", ""book"": ""long_only"", ""cost_bps"": 10}",information_ratio,{:.2f}
+4,0.51,backtest_performance_summary.csv,"{""window"": ""full"", ""model"": ""Original: FCI + EPS revision 6M"", ""book"": ""long_only"", ""cost_bps"": 10}",information_ratio,{:.2f}
+4,0.76,backtest_performance_summary.csv,"{""window"": ""examined"", ""model"": ""Revised: FCI + EPS persistence"", ""book"": ""long_only"", ""cost_bps"": 10}",sharpe,{:.2f}
+4,0.65,backtest_performance_summary.csv,"{""window"": ""examined"", ""model"": ""Original: FCI + EPS revision 6M"", ""book"": ""long_only"", ""cost_bps"": 10}",sharpe,{:.2f}
+4,0.55,backtest_performance_summary.csv,"{""window"": ""examined"", ""model"": ""Equal-weight benchmark"", ""book"": ""long_only"", ""cost_bps"": 0}",sharpe,{:.2f}
+4,0.79,backtest_performance_summary.csv,"{""window"": ""examined"", ""model"": ""Revised: FCI + EPS persistence"", ""book"": ""long_short"", ""cost_bps"": 10}",sharpe,{:.2f}
+4,+0.079,model_comparison.csv,"{""model"": ""Original: FCI + EPS revision 6M""}",IC_examined_6M,{:+.3f}
+4,0.46,model_comparison.csv,"{""model"": ""Original: FCI + EPS revision 6M""}",long_short_sharpe_examined,{:.2f}
+4,4.3x,model_comparison.csv,"{""model"": ""Original: FCI + EPS revision 6M""}",turnover_pa,{:.1f}x
+4,+0.141,model_comparison.csv,"{""model"": ""Macro only: FCI 6M""}",IC_examined_6M,{:+.3f}
+4,0.74,model_comparison.csv,"{""model"": ""Macro only: FCI 6M""}",long_short_sharpe_examined,{:.2f}
+4,4.9x,model_comparison.csv,"{""model"": ""Macro only: FCI 6M""}",turnover_pa,{:.1f}x
+4,+0.200,model_comparison.csv,"{""model"": ""Micro only: EPS persistence 12M""}",IC_examined_6M,{:+.3f}
+4,0.69,model_comparison.csv,"{""model"": ""Micro only: EPS persistence 12M""}",long_short_sharpe_examined,{:.2f}
+4,2.7x,model_comparison.csv,"{""model"": ""Micro only: EPS persistence 12M""}",turnover_pa,{:.1f}x
+4,+0.219,model_comparison.csv,"{""model"": ""Revised: FCI + EPS persistence""}",IC_examined_6M,{:+.3f}
+4,0.79,model_comparison.csv,"{""model"": ""Revised: FCI + EPS persistence""}",long_short_sharpe_examined,{:.2f}
+4,3.7x,model_comparison.csv,"{""model"": ""Revised: FCI + EPS persistence""}",turnover_pa,{:.1f}x
+4,+0.097,model_comparison.csv,"{""model"": ""Ridge challenger (4 pillars)""}",IC_examined_6M,{:+.3f}
+4,0.26,model_comparison.csv,"{""model"": ""Ridge challenger (4 pillars)""}",long_short_sharpe_examined,{:.2f}
+4,3.0x,model_comparison.csv,"{""model"": ""Ridge challenger (4 pillars)""}",turnover_pa,{:.1f}x
+4,0.76,transaction_cost_sensitivity.csv,"{""model"": ""Revised: FCI + EPS persistence"", ""book"": ""long_short"", ""cost_bps"": 0}",sharpe,{:.2f}
+4,0.66,transaction_cost_sensitivity.csv,"{""model"": ""Revised: FCI + EPS persistence"", ""book"": ""long_short"", ""cost_bps"": 20}",sharpe,{:.2f}
+4,2009-07 to 2026-04,presentation_figures.json,"{""key_path"": ""backtest_window.full""}",,{}
+5,OVERWEIGHT,current_ranking.csv,"{""market"": ""US""}",Predictive call,{}
+5,1,current_ranking.csv,"{""market"": ""US""}",Predictive rank,{:.0f}
+5,+1.16,current_ranking.csv,"{""market"": ""US""}",Predictive score,{:+.2f}
+5,+0.27,current_ranking.csv,"{""market"": ""US""}",Macro contribution,{:+.2f}
+5,+0.31,current_ranking.csv,"{""market"": ""US""}",Micro contribution,{:+.2f}
+5,-0.02,current_ranking.csv,"{""market"": ""US""}","[""Valuation contribution"", ""Technical contribution""]",{:+.2f}
+5,OVERWEIGHT,current_ranking.csv,"{""market"": ""Eurozone""}",Predictive call,{}
+5,2,current_ranking.csv,"{""market"": ""Eurozone""}",Predictive rank,{:.0f}
+5,+0.33,current_ranking.csv,"{""market"": ""Eurozone""}",Predictive score,{:+.2f}
+5,+0.08,current_ranking.csv,"{""market"": ""Eurozone""}",Macro contribution,{:+.2f}
+5,+0.09,current_ranking.csv,"{""market"": ""Eurozone""}",Micro contribution,{:+.2f}
+5,-0.21,current_ranking.csv,"{""market"": ""Eurozone""}","[""Valuation contribution"", ""Technical contribution""]",{:+.2f}
+5,NEUTRAL,current_ranking.csv,"{""market"": ""Japan""}",Predictive call,{}
+5,3,current_ranking.csv,"{""market"": ""Japan""}",Predictive rank,{:.0f}
+5,-0.36,current_ranking.csv,"{""market"": ""Japan""}",Predictive score,{:+.2f}
+5,-0.05,current_ranking.csv,"{""market"": ""Japan""}",Macro contribution,{:+.2f}
+5,-0.13,current_ranking.csv,"{""market"": ""Japan""}",Micro contribution,{:+.2f}
+5,+0.05,current_ranking.csv,"{""market"": ""Japan""}","[""Valuation contribution"", ""Technical contribution""]",{:+.2f}
+5,UNDERWEIGHT,current_ranking.csv,"{""market"": ""Switzerland""}",Predictive call,{}
+5,4,current_ranking.csv,"{""market"": ""Switzerland""}",Predictive rank,{:.0f}
+5,-0.51,current_ranking.csv,"{""market"": ""Switzerland""}",Predictive score,{:+.2f}
+5,+0.09,current_ranking.csv,"{""market"": ""Switzerland""}",Macro contribution,{:+.2f}
+5,-0.35,current_ranking.csv,"{""market"": ""Switzerland""}",Micro contribution,{:+.2f}
+5,+0.08,current_ranking.csv,"{""market"": ""Switzerland""}","[""Valuation contribution"", ""Technical contribution""]",{:+.2f}
+5,UNDERWEIGHT,current_ranking.csv,"{""market"": ""UK""}",Predictive call,{}
+5,5,current_ranking.csv,"{""market"": ""UK""}",Predictive rank,{:.0f}
+5,-0.62,current_ranking.csv,"{""market"": ""UK""}",Predictive score,{:+.2f}
+5,-0.40,current_ranking.csv,"{""market"": ""UK""}",Macro contribution,{:+.2f}
+5,+0.09,current_ranking.csv,"{""market"": ""UK""}",Micro contribution,{:+.2f}
+5,+0.10,current_ranking.csv,"{""market"": ""UK""}","[""Valuation contribution"", ""Technical contribution""]",{:+.2f}
+5,+1.16,current_ranking.csv,"{""market"": ""US""}",Predictive score,{:+.2f}
+5,6,presentation_figures.json,"{""key_path"": ""rank_stability.us_first_in_last8""}",,{}
+5,1,presentation_figures.json,"{""key_path"": ""rank_stability.uk_rank_prior_month""}",,{}
+5,5,presentation_figures.json,"{""key_path"": ""rank_stability.uk_rank_now""}",,{}
+5,3,presentation_figures.json,"{""key_path"": ""rank_stability.eurozone_rank_prior_month""}",,{}
+5,2,presentation_figures.json,"{""key_path"": ""rank_stability.eurozone_rank_now""}",,{}

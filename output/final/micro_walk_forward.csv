@@ -1,0 +1,3 @@
+horizon,walk_forward_IC,HAC_t,months,distinct_choices,share_of_years_persistence_chosen,share_of_years_EWMA_chosen
+3M,0.20827586206896553,3.5014403940999155,145,2,0.0,0.46153846153846156
+6M,0.30492957746478877,4.146944546663281,142,2,0.0,0.9230769230769231

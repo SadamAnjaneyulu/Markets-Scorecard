@@ -1,0 +1,368 @@
+{
+  "as_of": "2026-04",
+  "panel_start": "2005-12",
+  "panel_months": 245,
+  "reconstruction_mad_pp": 0.03877177029750034,
+  "micro_old_6M": 0.042268041237113425,
+  "micro_new_6M": 0.2001538814283466,
+  "micro_ewma_6M": 0.26804123711340205,
+  "combo_old_6M": 0.07938144329896907,
+  "combo_new_6M": 0.21855670103092784,
+  "matched_months_6M": 97,
+  "micro_walk_forward_6M": 0.30492957746478877,
+  "micro_wf_ewma_share": 0.9230769230769231,
+  "valuation_ex_us_examined": 0.08200000000000002,
+  "technical_ex_us_6M": -0.0026431718061673956,
+  "technical_retained_6M": 0.6794557823129252,
+  "technical_walk_forward_6M": 0.15,
+  "technical_same_months_6M": 0.16408450704225355,
+  "predictive_pillars": [
+    "Macro",
+    "Micro"
+  ],
+  "ic": {
+    "Macro": {
+      "discovery_3M": 0.0758241758241758,
+      "discovery_6M": 0.17472527472527474,
+      "examined_3M": 0.15825242718446603,
+      "examined_6M": 0.15000000000000002
+    },
+    "Micro": {
+      "discovery_3M": 0.12947176920263814,
+      "discovery_6M": 0.17410004209574492,
+      "examined_3M": 0.19142235704636712,
+      "examined_6M": 0.2001538814283466
+    },
+    "Valuation": {
+      "discovery_3M": 0.1711340206185567,
+      "discovery_6M": 0.29484536082474233,
+      "examined_3M": -0.06310679611650484,
+      "examined_6M": -0.04400000000000002
+    },
+    "Technical": {
+      "discovery_3M": 0.03471074380165289,
+      "discovery_6M": 0.13719008264462812,
+      "examined_3M": 0.1485436893203884,
+      "examined_6M": 0.14
+    }
+  },
+  "ci_examined": {
+    "Macro": {
+      "3M": [
+        0.0057766990291262185,
+        0.28932038834951457
+      ],
+      "6M": [
+        -0.017999999999999988,
+        0.33602499999999996
+      ]
+    },
+    "Micro": {
+      "3M": [
+        0.024944119668343943,
+        0.34809891869852283
+      ],
+      "6M": [
+        0.019490281620663852,
+        0.3977202632543279
+      ]
+    },
+    "Valuation": {
+      "3M": [
+        -0.20779126213592236,
+        0.053422330097087245
+      ],
+      "6M": [
+        -0.25402500000000006,
+        0.14604999999999974
+      ]
+    },
+    "Technical": {
+      "3M": [
+        -0.011650485436893197,
+        0.2718689320388349
+      ],
+      "6M": [
+        0.004999999999999999,
+        0.297025
+      ]
+    }
+  },
+  "scorecard_ic": {
+    "Diagnostic (four pillars)": {
+      "discovery_3M": 0.20439560439560436,
+      "discovery_6M": 0.33296703296703295,
+      "examined_3M": 0.09500000000000001,
+      "examined_6M": 0.1134020618556701
+    },
+    "Predictive (Macro + Micro)": {
+      "discovery_3M": 0.16263736263736261,
+      "discovery_6M": 0.27802197802197803,
+      "examined_3M": 0.195,
+      "examined_6M": 0.21855670103092784
+    }
+  },
+  "current": {
+    "US": {
+      "diagnostic_rank": 1,
+      "predictive_rank": 1,
+      "diagnostic_score": 0.5552548646106158,
+      "predictive_score": 1.159547072021869,
+      "diagnostic_call": "OVERWEIGHT",
+      "predictive_call": "OVERWEIGHT",
+      "Macro": 1.0912129170138956,
+      "Micro": 1.2278812270298425,
+      "Valuation": 0.6922519357922696,
+      "Technical": -0.7903266213935446,
+      "Macro_contribution": 0.2728032292534739,
+      "Micro_contribution": 0.3069703067574606,
+      "Valuation_contribution": 0.1730629839480674,
+      "Technical_contribution": -0.19758165534838615,
+      "eps_up_months": 12,
+      "fci": 0.010852956297295973,
+      "forward_pe": 20.6951
+    },
+    "Eurozone": {
+      "diagnostic_rank": 2,
+      "predictive_rank": 2,
+      "diagnostic_score": -0.04415300834198517,
+      "predictive_score": 0.3339548061096857,
+      "diagnostic_call": "OVERWEIGHT",
+      "predictive_call": "OVERWEIGHT",
+      "Macro": 0.3170864044965586,
+      "Micro": 0.3508232077228128,
+      "Valuation": -0.6422454515248228,
+      "Technical": -0.20227619406248926,
+      "Macro_contribution": 0.07927160112413965,
+      "Micro_contribution": 0.0877058019307032,
+      "Valuation_contribution": -0.1605613628812057,
+      "Technical_contribution": -0.050569048515622314,
+      "eps_up_months": 11,
+      "fci": -0.126093869609894,
+      "forward_pe": 14.8517
+    },
+    "UK": {
+      "diagnostic_rank": 5,
+      "predictive_rank": 5,
+      "diagnostic_score": -0.20578499978080994,
+      "predictive_score": -0.6195368753587248,
+      "diagnostic_call": "UNDERWEIGHT",
+      "predictive_call": "UNDERWEIGHT",
+      "Macro": -1.5898969584402625,
+      "Micro": 0.3508232077228128,
+      "Valuation": -0.6572345549097235,
+      "Technical": 1.0731683065039335,
+      "Macro_contribution": -0.3974742396100656,
+      "Micro_contribution": 0.0877058019307032,
+      "Valuation_contribution": -0.16430863872743087,
+      "Technical_contribution": 0.26829207662598337,
+      "eps_up_months": 11,
+      "fci": -0.46344870036330754,
+      "forward_pe": 12.8938
+    },
+    "Switzerland": {
+      "diagnostic_rank": 4,
+      "predictive_rank": 4,
+      "diagnostic_score": -0.17252299373361113,
+      "predictive_score": -0.5128727614467956,
+      "diagnostic_call": "UNDERWEIGHT",
+      "predictive_call": "UNDERWEIGHT",
+      "Macro": 0.3775473079976541,
+      "Micro": -1.4032928308912453,
+      "Valuation": 1.4198550066916082,
+      "Technical": -1.0842014587324615,
+      "Macro_contribution": 0.09438682699941353,
+      "Micro_contribution": -0.35082320772281134,
+      "Valuation_contribution": 0.35496375167290206,
+      "Technical_contribution": -0.2710503646831154,
+      "eps_up_months": 9,
+      "fci": -0.11539803541215941,
+      "forward_pe": 18.3292
+    },
+    "Japan": {
+      "diagnostic_rank": 3,
+      "predictive_rank": 3,
+      "diagnostic_score": -0.13279386275420585,
+      "predictive_score": -0.36109224132603057,
+      "diagnostic_call": "NEUTRAL",
+      "predictive_call": "NEUTRAL",
+      "Macro": -0.19594967106784547,
+      "Micro": -0.5262348115842157,
+      "Valuation": -0.8126269360493309,
+      "Technical": 1.0036359676845688,
+      "Macro_contribution": -0.04898741776696137,
+      "Micro_contribution": -0.13155870289605393,
+      "Valuation_contribution": -0.20315673401233272,
+      "Technical_contribution": 0.2509089919211422,
+      "eps_up_months": 10,
+      "fci": -0.2168525001287692,
+      "forward_pe": 17.611
+    }
+  },
+  "ranking_order": [
+    "US",
+    "Eurozone",
+    "Japan",
+    "Switzerland",
+    "UK"
+  ],
+  "views_agree": 5,
+  "rank_stability": {
+    "us_first_in_last8": 6,
+    "uk_rank_prior_month": 1,
+    "uk_rank_now": 5,
+    "eurozone_rank_prior_month": 3,
+    "eurozone_rank_now": 2
+  },
+  "gap_rank2_rank3": 0.6950470474357162,
+  "model_comparison": {
+    "Original: FCI + EPS revision 6M": {
+      "IC_examined_3M": 0.14500000000000002,
+      "IC_examined_6M": 0.07938144329896907,
+      "long_only_sharpe": 0.7033777290811565,
+      "long_only_IR": 0.5095242202509978,
+      "long_short_sharpe_full": 0.5523450353802203,
+      "long_short_sharpe_examined": 0.4627245397929009,
+      "max_drawdown": -15.599570694222486,
+      "turnover": 4.328277632692372
+    },
+    "Macro only: FCI 6M": {
+      "IC_examined_3M": 0.138,
+      "IC_examined_6M": 0.14123711340206185,
+      "long_only_sharpe": 0.6975962032523754,
+      "long_only_IR": 0.6633320938737816,
+      "long_short_sharpe_full": 0.7548545997492747,
+      "long_short_sharpe_examined": 0.7430275228613877,
+      "max_drawdown": -13.707741738758838,
+      "turnover": 4.873561043125057
+    },
+    "Micro only: EPS persistence 12M": {
+      "IC_examined_3M": 0.19142235704636712,
+      "IC_examined_6M": 0.2001538814283466,
+      "long_only_sharpe": 0.745822314204697,
+      "long_only_IR": 0.28176193648919573,
+      "long_short_sharpe_full": 0.5367271316857458,
+      "long_short_sharpe_examined": 0.6897628447671507,
+      "max_drawdown": -15.56299187876007,
+      "turnover": 2.7428688927719653
+    },
+    "Revised: FCI + EPS persistence": {
+      "IC_examined_3M": 0.195,
+      "IC_examined_6M": 0.21855670103092784,
+      "long_only_sharpe": 0.7322172422656235,
+      "long_only_IR": 0.5932894870956474,
+      "long_short_sharpe_full": 0.708903062707712,
+      "long_short_sharpe_examined": 0.7856039979395629,
+      "max_drawdown": -15.47722449876664,
+      "turnover": 3.7465969708360554
+    },
+    "Ridge challenger (4 pillars)": {
+      "IC_examined_3M": 0.11200000000000002,
+      "IC_examined_6M": 0.09690721649484536,
+      "long_only_sharpe": 0.6022721733893721,
+      "long_only_IR": 0.3581188332064635,
+      "long_short_sharpe_full": 0.3647878576092139,
+      "long_short_sharpe_examined": 0.26307277169784293,
+      "max_drawdown": -13.01528289208741,
+      "turnover": 2.9778942776847637
+    }
+  },
+  "backtest": {
+    "full_revised_LO_return_pct_pa": 9.944938518721958,
+    "full_revised_LO_volatility_pct_pa": 14.409827984699508,
+    "full_revised_LO_sharpe": 0.7322172422656235,
+    "full_revised_LO_max_drawdown_pct": -28.513181927616994,
+    "full_revised_LO_turnover_pa": 1.7866452980102239,
+    "full_revised_LO_information_ratio": 0.5932894870956474,
+    "full_revised_LS_return_pct_pa": 4.800925905658904,
+    "full_revised_LS_volatility_pct_pa": 6.966193241819041,
+    "full_revised_LS_sharpe": 0.708903062707712,
+    "full_revised_LS_max_drawdown_pct": -15.47722449876664,
+    "full_revised_LS_turnover_pa": 3.7465969708360554,
+    "full_original_LO_return_pct_pa": 9.151872175660625,
+    "full_original_LO_volatility_pct_pa": 13.855725577648844,
+    "full_original_LO_sharpe": 0.7033777290811565,
+    "full_original_LO_max_drawdown_pct": -27.379572203976288,
+    "full_original_LO_turnover_pa": 2.0684559150594435,
+    "full_original_LO_information_ratio": 0.5095242202509978,
+    "full_diagnostic_LO_return_pct_pa": 9.280947007533102,
+    "full_diagnostic_LO_volatility_pct_pa": 14.063408004720776,
+    "full_diagnostic_LO_sharpe": 0.7036904052862358,
+    "full_diagnostic_LO_max_drawdown_pct": -27.3912833440648,
+    "full_diagnostic_LO_turnover_pa": 1.6876987672559385,
+    "full_diagnostic_LO_information_ratio": 0.4486440627876843,
+    "full_benchmark_return_pct_pa": 7.2325969304757765,
+    "full_benchmark_volatility_pct_pa": 14.332878028821833,
+    "full_benchmark_sharpe": 0.5603252504377075,
+    "full_benchmark_max_drawdown_pct": -27.217376460287813,
+    "discovery_revised_LO_return_pct_pa": 8.089207749785366,
+    "discovery_revised_LO_volatility_pct_pa": 14.357790255168812,
+    "discovery_revised_LO_sharpe": 0.6146645619592025,
+    "discovery_revised_LO_max_drawdown_pct": -24.764011199152968,
+    "discovery_revised_LO_turnover_pa": 1.9136818998374603,
+    "discovery_revised_LO_information_ratio": 0.49645593310510094,
+    "discovery_revised_LS_return_pct_pa": 5.126298138053387,
+    "discovery_revised_LS_volatility_pct_pa": 7.777962793313943,
+    "discovery_revised_LS_sharpe": 0.6823101474517687,
+    "discovery_revised_LS_max_drawdown_pct": -15.398476201028865,
+    "discovery_revised_LS_turnover_pa": 3.8138010217526936,
+    "discovery_original_LO_return_pct_pa": 8.75059729840606,
+    "discovery_original_LO_volatility_pct_pa": 13.692849215228964,
+    "discovery_original_LO_sharpe": 0.6823797555098126,
+    "discovery_original_LO_max_drawdown_pct": -18.3574606349175,
+    "discovery_original_LO_turnover_pa": 2.3169810062591933,
+    "discovery_original_LO_information_ratio": 0.73283158613805,
+    "discovery_diagnostic_LO_return_pct_pa": 8.765718340503682,
+    "discovery_diagnostic_LO_volatility_pct_pa": 14.030782518373364,
+    "discovery_diagnostic_LO_sharpe": 0.6703098585635909,
+    "discovery_diagnostic_LO_max_drawdown_pct": -22.315605178641682,
+    "discovery_diagnostic_LO_turnover_pa": 1.69648507013673,
+    "discovery_diagnostic_LO_information_ratio": 0.7412054839542088,
+    "discovery_benchmark_return_pct_pa": 5.852360703119386,
+    "discovery_benchmark_volatility_pct_pa": 14.288689425379436,
+    "discovery_benchmark_sharpe": 0.4699399896348628,
+    "discovery_benchmark_max_drawdown_pct": -20.12979283672507,
+    "examined_revised_LO_return_pct_pa": 10.731901465753268,
+    "examined_revised_LO_volatility_pct_pa": 14.939507622939036,
+    "examined_revised_LO_sharpe": 0.7590391398928238,
+    "examined_revised_LO_max_drawdown_pct": -28.513181927616984,
+    "examined_revised_LO_turnover_pa": 1.6959120881711085,
+    "examined_revised_LO_information_ratio": 0.7624497848177708,
+    "examined_revised_LS_return_pct_pa": 4.910557438657626,
+    "examined_revised_LS_volatility_pct_pa": 6.368229041822844,
+    "examined_revised_LS_sharpe": 0.7856039979395629,
+    "examined_revised_LS_max_drawdown_pct": -15.477224498766573,
+    "examined_revised_LS_turnover_pa": 3.7129721807051683,
+    "examined_original_LO_return_pct_pa": 8.64283043405447,
+    "examined_original_LO_volatility_pct_pa": 14.451735320213494,
+    "examined_original_LO_sharpe": 0.647426622008363,
+    "examined_original_LO_max_drawdown_pct": -27.379572203976277,
+    "examined_original_LO_turnover_pa": 1.8561057972532908,
+    "examined_original_LO_information_ratio": 0.35806855411356947,
+    "examined_diagnostic_LO_return_pct_pa": 8.856006901026458,
+    "examined_diagnostic_LO_volatility_pct_pa": 14.573501606942132,
+    "examined_diagnostic_LO_sharpe": 0.6570445595584883,
+    "examined_diagnostic_LO_max_drawdown_pct": -27.391283344064774,
+    "examined_diagnostic_LO_turnover_pa": 1.63665844400176,
+    "examined_diagnostic_LO_information_ratio": 0.23183657257077045,
+    "examined_benchmark_return_pct_pa": 7.329225425071972,
+    "examined_benchmark_volatility_pct_pa": 14.836106082094178,
+    "examined_benchmark_sharpe": 0.5520678165837919,
+    "examined_benchmark_max_drawdown_pct": -27.217376460287788
+  },
+  "cost_sensitivity": {
+    "0": 0.7612266414503585,
+    "5": 0.7350986153282929,
+    "10": 0.708903062707712,
+    "20": 0.6563159181021008
+  },
+  "backtest_window": {
+    "full": "2009-07 to 2026-04",
+    "discovery": "2009-07 to 2016-12",
+    "examined": "2017-08 to 2026-04"
+  },
+  "micro_matched_months_3M": 100,
+  "micro_old_3M": 0.153,
+  "micro_new_3M": 0.19142235704636712,
+  "signal_lag_months": 1
+}
